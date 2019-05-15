@@ -19,6 +19,15 @@ export const GlobalStyles = createGlobalStyle`
         font-family: Helvetica;
         font-weight: 900;
         font-style: normal;
+        font-size: 1rem;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-family: Helvetica;
+        font-weight: 900;
+        font-style: normal;
         font-size: 0.75rem;
         margin: 0;
         text-transform: uppercase;

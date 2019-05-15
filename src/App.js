@@ -3,16 +3,39 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyles, Theme } from './utils/Styles'
 import GlobalData from './utils/GlobalData'
 
+import Navbar from './components/Navbar'
 import Section from './containers/Section'
 
-class App extends React.Component {
+const sections = ["Class Days", "Senior Profiles", "Senior Columns"]
+
+class App extends React.PureComponent {
   constructor(props){
     super(props)
     this.classDaysRef = React.createRef()
     this.seniorProfRef = React.createRef()
     this.seniorColRef = React.createRef()
     this.handleScroll = this.handleScroll.bind(this)
+    this.navigateTo = this.navigateTo.bind(this)
     this.prevScroll = 0
+    this.state = {
+      navActive: 0
+    }
+  }
+
+  navigateTo(i){
+    switch(i) {
+      case 0: 
+        window.scrollTo({top: this.classDaysRef.current.offsetTop, behavior: 'smooth'})
+        break
+      case 1:
+        window.scrollTo({top: this.seniorProfRef.current.offsetTop, behavior: 'smooth'})
+        break
+      case 2:
+        window.scrollTo({top: this.seniorColRef.current.offsetTop, behavior: 'smooth'})
+        break
+      default:
+        break
+    }
   }
 
   handleScroll(e){
@@ -20,19 +43,19 @@ class App extends React.Component {
     const top2 = this.seniorProfRef.current.offsetTop
     const top3 = this.seniorColRef.current.offsetTop
     const currScroll = window.scrollY
+    const winHeight = window.innerHeight
+    const adjustedScroll = currScroll + 0.4 * winHeight
 
-    console.log(`1: ${top1} 2: ${top2} 3: ${top3} scroll: ${currScroll}`)
     // let scrollingUp = this.prevScroll > window.scrollY
-    // if(!scrollingUp){
-    // }
-    if(currScroll > top1 && currScroll < top2){
-      console.log('check1')
+
+    if(adjustedScroll > top1 && adjustedScroll < top2){
+      this.setState({navActive: 0})
     }
-    if(currScroll > top2 && currScroll < top3){
-      console.log('check2')
+    if(adjustedScroll > top2 && adjustedScroll < top3){
+      this.setState({navActive: 1})
     }
-    if(currScroll > top3){
-      console.log('check3')
+    if(adjustedScroll > top3){
+      this.setState({navActive: 2})
     }
 
     this.prevScroll = currScroll
@@ -40,9 +63,6 @@ class App extends React.Component {
 
   componentDidMount(){
       window.addEventListener('scroll', this.handleScroll)
-      const top1 = this.classDaysRef
-      console.log(top1)
-      //.current.getBoundingClientRect().top
   }
 
   componentWillUnmount(){
@@ -54,9 +74,10 @@ class App extends React.Component {
       <ThemeProvider theme={Theme}>
         <React.Fragment>
           <GlobalStyles/>
-          <Section name={"Class Days"} data={GlobalData["Class Days"]} _ref={this.classDaysRef}/>
-          <Section name={"Senior Profiles"} data={GlobalData["Senior Profiles"]} _ref={this.seniorProfRef}/>
-          <Section name={"Senior Columns"} data={GlobalData["Senior Columns"]} _ref={this.seniorColRef}/>
+          <Navbar active={this.state.navActive} sections={sections} navigateTo={this.navigateTo}/>
+          <Section name={sections[0]} data={GlobalData[sections[0]]} _ref={this.classDaysRef}/>
+          <Section name={sections[1]} data={GlobalData[sections[1]]} _ref={this.seniorProfRef}/>
+          <Section name={sections[2]} data={GlobalData[sections[2]]} _ref={this.seniorColRef}/>
         </React.Fragment>
       </ThemeProvider>
     );

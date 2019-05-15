@@ -43,8 +43,8 @@ export default class ArticleBox extends React.Component {
                 <a href={this.props.data.link}>
                     <h2>{this.props.data.title}</h2>
                 </a>
-                <h3>By {this.props.data.author}</h3>
-                {this.props.data.photographer && <h3>Photograph by {this.props.data.title}</h3>}
+                <h4>By {this.props.data.author}</h4>
+                {this.props.data.photographer && <h4>Photograph by {this.props.data.title}</h4>}
             </ArticleInfo>
         </ArticleBoxWrapper>)
     }
