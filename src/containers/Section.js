@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components'
-import {Desktop} from 'react-responsive-simple'
 
 import ArticleBox from '../components/ArticleBox.js'
 
 const SectionWrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    background: ${props=>props.theme.cream};
 `
 
 const HeaderWrapper = styled.div`
