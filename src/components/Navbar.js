@@ -11,6 +11,7 @@ const NavbarWrapper = styled.div`
     top: 50vh;
     margin-top: -30vh;
     z-index: 5;
+    transform: rotate(180deg);
 `
 
 const NavItem = styled.div`
@@ -28,7 +29,7 @@ export default class Navbar extends React.Component {
         ))
         return (
             <NavbarWrapper>
-                {NavItems}
+                {NavItems.reverse()}
             </NavbarWrapper>
         )
     }
