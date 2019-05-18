@@ -21,9 +21,12 @@ export const GlobalStyles = createGlobalStyle`
         font-family: brandon-grotesque;
         font-weight: 700;
         font-style: normal;
-        font-size: 1rem;
+        font-size: .7rem;
         margin: 0;
         text-transform: uppercase;
+        @media only screen and (min-width: 992px){
+            font-size: 1rem;
+        }
     }
 
     h4 {

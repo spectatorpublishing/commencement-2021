@@ -21,7 +21,7 @@ const HeaderWrapper = styled.div`
 
 const Header = styled.div`
     max-width: 35vw;
-    margin-left: 2rem;
+    margin-left: 10rem;
 `
 
 const ArticlesWrapper = styled.div`
