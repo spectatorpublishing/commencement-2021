@@ -27,6 +27,8 @@ export default class Navbar extends React.Component {
                 <h3>{el}</h3>
             </NavItem>
         ))
+        // Because css only supports writing downwards and we want to write upwards, we
+        // are rotating the whole thing by 180deg and reversing the items
         return (
             <NavbarWrapper>
                 {NavItems.reverse()}
