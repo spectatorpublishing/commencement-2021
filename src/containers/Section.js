@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import {Desktop} from 'react-responsive-simple'
 
 import ArticleBox from '../components/ArticleBox.js'
 
@@ -9,10 +10,13 @@ const SectionWrapper = styled.div`
 `
 
 const HeaderWrapper = styled.div`
-    display: inline-flex;
-    position: sticky;
-    top: 40vh;
-    height: 100%;
+    display: none;
+    @media only screen and (min-width: 992px){
+        display: inline-flex;
+        position: sticky;
+        top: 40vh;
+        height: 100%;
+    }
 `
 
 const Header = styled.div`
@@ -21,8 +25,11 @@ const Header = styled.div`
 `
 
 const ArticlesWrapper = styled.div`
-    display: inline-block;
-    width: 45vw;
+    width: 100vw;
+    @media only screen and (min-width: 992px){
+        display: inline-block;
+        width: 45vw;
+    }
     background: ${props => props.theme.babyBlue};
 `
 
@@ -36,16 +43,16 @@ export default class Section extends React.Component {
             <ArticleBox key={i} data={el}/>
         ))
         return(
-            <SectionWrapper ref={this.props._ref}>
-                <HeaderWrapper>
-                    <Header>
-                        <h1>{this.props.name}</h1>
-                    </Header>
-                </HeaderWrapper>
-                <ArticlesWrapper>
-                    {Articles}
-                </ArticlesWrapper>
-            </SectionWrapper>
+                <SectionWrapper ref={this.props._ref}>
+                    <HeaderWrapper>
+                        <Header>
+                            <h1>{this.props.name}</h1>
+                        </Header>
+                    </HeaderWrapper>
+                    <ArticlesWrapper>
+                        {Articles}
+                    </ArticlesWrapper>
+                </SectionWrapper>
         )
     }
 }

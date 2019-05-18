@@ -1,23 +1,25 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+    @import url("https://use.typekit.net/oun7bhh.css");
     h1 {
-        font-family: Helvetica;
-        font-weight: 900;
+        font-family: brandon-grotesque;
+        font-weight: 700;
         font-style: normal;
         font-size: 4rem;
         margin-bottom: 1rem;
+        text-transform: uppercase;
     }
     h2 {
-        font-family: Helvetica;
-        font-weight: 900;
+        font-family: brandon-grotesque;
+        font-weight: 700;
         font-style: normal;
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
     h3 {
-        font-family: Helvetica;
-        font-weight: 900;
+        font-family: brandon-grotesque;
+        font-weight: 700;
         font-style: normal;
         font-size: 1rem;
         margin: 0;
@@ -25,8 +27,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h4 {
-        font-family: Helvetica;
-        font-weight: 900;
+        font-family: brandon-grotesque;
+        font-weight: 400;
         font-style: normal;
         font-size: 0.75rem;
         margin: 0;

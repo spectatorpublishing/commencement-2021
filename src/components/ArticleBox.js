@@ -4,19 +4,30 @@ import styled from 'styled-components'
 const ArticleBoxWrapper = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-bottom: 50px;
+    @media only screen and (min-width: 992px){
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: unset;
+        text-align: left;
+    }
 `
 
 const ArticleImage = styled.div`
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    margin-left: -125px;
-    border-radius: 50%;
-    overflow: hidden;
+    @media only screen and (min-width: 992px){
+        margin-left: -125px;
+    }
+    & a {
+        width: 0; //hide this: we only want the img to be clickable
+    }
     & img {
-        width: 100%;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 50%;
     }
 `
 
