@@ -20,7 +20,7 @@ const ItemContainer = styled.div`
     margin-top: 5vh;
     margin-left: 1rem;
     width: 82vw;
-    border-bottom: solid grey 1px;  
+    border-bottom: solid grey 1px;
     @media only screen and (min-width: 992px){
         flex-direction: column;
         height: 60vh;
@@ -42,6 +42,7 @@ const NavItemContainer =styled.div`
 const NavItem = styled.div`
     border-bottom: 2px solid ${props => props.active ? props.theme.lightGray : "transparent"};
     color:grey;
+    cursor: pointer;
     @media only screen and (min-width: 992px){
         writing-mode: vertical-rl;
         padding-left: 1vw;
