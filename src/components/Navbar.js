@@ -2,45 +2,46 @@ import React from 'react';
 import styled from 'styled-components'
 
 const NavbarWrapper = styled.div`
-
     display: flex;
     flex-direction: column;
     position: fixed;
     left: 0;
-    top: 0vh;
+    top: 0;
     z-index: 5;
-
-
 `
+
 const ItemContainer = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 60vh;
     justify-content: space-evenly;
     margin-top: 15vh;
     transform: rotate(180deg);
-    padding-right: 3vw;
-    width: 2vw;
+    padding-right: 25px;
     border-left: solid grey 1px;    
 `;
 
 const NavItem = styled.div`
-    color:grey;
+    color: ${props => props.theme.darkgray};
     writing-mode: vertical-rl;
     padding-left: 1vw;
     border-left: 3px solid ${props => props.active ? props.theme.lightGray : "transparent"};
+    :hover{
+        cursor: pointer;
+    }
 `
+
 const CrownLogo =styled.a`
-    position: relative;
-    background-image: url("https://s3.amazonaws.com/year-in-review-assets/spectator-logo.png?fbclid=IwAR3Li82vFjfxfsNhBbfEkqAAwV3IhXkyT6Ds5HJKos7fS24-ry81K2pJn6g");
-    background-size: contain;
-    background-repeat: no-repeat;
-    // transform: rotate(180deg);
-    height: 4vw;
-    width: 4vw;
-    top: 10vh;
-    left: 3.1vw;
-    
+    position: absolute;
+    width: 50px;
+    left: -25px;
+    top: calc(60vh + 20px);
+    transform: rotate(180deg);
+    & img{
+        width: 100%;
+        object-fit: contain;
+    }
 `;
 
 export default class Navbar extends React.Component {
@@ -54,9 +55,11 @@ export default class Navbar extends React.Component {
         // are rotating the whole thing by 180deg and reversing the items
         return (
             <NavbarWrapper>
-                <CrownLogo href= "https://www.columbiaspectator.com/"/>
                 <ItemContainer>
                     {NavItems.reverse()}
+                    <CrownLogo href= "https://www.columbiaspectator.com/">
+                        <img alt="Crown Logo" src="https://s3.amazonaws.com/year-in-review-assets/spectator-logo.png?fbclid=IwAR3Li82vFjfxfsNhBbfEkqAAwV3IhXkyT6Ds5HJKos7fS24-ry81K2pJn6g"/>
+                    </CrownLogo>
                 </ItemContainer>
             </NavbarWrapper>
         )

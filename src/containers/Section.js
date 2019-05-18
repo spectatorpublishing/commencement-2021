@@ -26,11 +26,11 @@ const Header = styled.div`
 
 const ArticlesWrapper = styled.div`
     width: 100vw;
+    background: ${props => props.theme.babyBlue};
     @media only screen and (min-width: 992px){
         display: inline-block;
         width: 45vw;
     }
-    background: ${props => props.theme.babyBlue};
 `
 
 export default class Section extends React.Component {
