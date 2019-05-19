@@ -4,6 +4,7 @@ import { GlobalStyles, Theme } from './utils/Styles'
 import GlobalData from './utils/GlobalData'
 
 import Navbar from './components/Navbar'
+import Title from './containers/Title'
 import Section from './containers/Section'
 
 const sections = ["Class Days", "Senior Profiles", "Senior Columns"]
@@ -74,6 +75,7 @@ class App extends React.PureComponent {
       <ThemeProvider theme={Theme}>
         <React.Fragment>
           <GlobalStyles/>
+          <Title sections={sections}/>
           <Navbar active={this.state.navActive} sections={sections} navigateTo={this.navigateTo}/>
           <Section name={sections[0]} data={GlobalData[sections[0]]} _ref={this.classDaysRef}/>
           <Section name={sections[1]} data={GlobalData[sections[1]]} _ref={this.seniorProfRef}/>

@@ -1,15 +1,24 @@
 import React from 'react';
 import styled from 'styled-components'
+import {Desktop, MobileAndTablet} from 'react-responsive-simple'
+
 
 const NavbarWrapper = styled.div`
     display: flex;
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0vh;
     z-index: 5;
+    height:3.2rem;
+    background-color: white;
     @media only screen and (min-width: 992px){
         font-size: 30px !important;
         flex-direction: column;
+        position: sticky;
+        width:10vw;
+        height:100vh;
+        margin-bottom: -100vh
+        background-color: transparent;
     }
 `
 
@@ -17,8 +26,9 @@ const ItemContainer = styled.div`
     display: flex;
     position: relative;
     justify-content: space-between;
-    margin-top: 5vh;
+    margin-top: 1.3rem;
     margin-left: 1rem;
+    height:1.2rem;
     width: 82vw;
     border-bottom: solid grey 1px;
     @media only screen and (min-width: 992px){
@@ -33,10 +43,6 @@ const ItemContainer = styled.div`
         border-bottom: none;  
         border-left: solid grey 1px;    
     }
-`
-
-const NavItemContainer =styled.div`
-    padding-left: 1vw;
 `
 
 const NavItem = styled.div`
@@ -56,9 +62,9 @@ const CrownLogo =styled.a`
     background-image: url("https://s3.amazonaws.com/year-in-review-assets/spectator-logo.png?fbclid=IwAR3Li82vFjfxfsNhBbfEkqAAwV3IhXkyT6Ds5HJKos7fS24-ry81K2pJn6g");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 10vw;
+    height: 100%;
     width: 10vw;
-    top: 3.4vh;
+    top: .5rem;
     left: 2vw;
     @media only screen and (min-width: 992px){
         height: 4vw;
@@ -80,9 +86,16 @@ export default class Navbar extends React.Component {
         return (
             <NavbarWrapper>
                 <CrownLogo href= "https://www.columbiaspectator.com/"/>
-                <ItemContainer>
-                    {NavItems.reverse()}
-                </ItemContainer>
+                <Desktop>
+                    <ItemContainer>
+                        {NavItems.reverse()}
+                    </ItemContainer>
+                </Desktop>
+                <MobileAndTablet>
+                    <ItemContainer>
+                        {NavItems}
+                    </ItemContainer>
+                </MobileAndTablet>
             </NavbarWrapper>
         )
     }
