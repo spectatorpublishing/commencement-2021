@@ -75,8 +75,8 @@ class App extends React.PureComponent {
       <ThemeProvider theme={Theme}>
         <React.Fragment>
           <GlobalStyles/>
-          <Navbar active={this.state.navActive} sections={sections} navigateTo={this.navigateTo}/>
           <Title sections={sections}/>
+          <Navbar active={this.state.navActive} sections={sections} navigateTo={this.navigateTo}/>
           <Section name={sections[0]} data={GlobalData[sections[0]]} _ref={this.classDaysRef}/>
           <Section name={sections[1]} data={GlobalData[sections[1]]} _ref={this.seniorProfRef}/>
           <Section name={sections[2]} data={GlobalData[sections[2]]} _ref={this.seniorColRef}/>

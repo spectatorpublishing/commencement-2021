@@ -1,31 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
-const OuterContainer = styled.div`
-    position: absolute;
-    top: 0vh;
-    left:0;
-     @media only screen and (min-width: 992px){
-        position: absolute;
-        top: 0;
-        left:0;
-     }
-`;
-const BlankSpace =styled.div`
-    height: 100vh;
-    width: 100vw;
-    @media only screen and (min-width: 992px){
-        height: 100vh;
-        width: 10vw;
-    }
-`;
-const NavbarOuterWrapper =styled.div`
-    height: 870vh;
-    width: 100vw;
-    @media only screen and (min-width: 992px){
-        height: 468vh;
-        width: 10vw
-    }
-`;
+import {Desktop, MobileAndTablet} from 'react-responsive-simple'
+
+
 const NavbarWrapper = styled.div`
     display: flex;
     position: sticky;
@@ -40,6 +17,7 @@ const NavbarWrapper = styled.div`
         position: sticky;
         width:10vw;
         height:100vh;
+        margin-bottom: -100vh
         background-color: transparent;
     }
 `
@@ -106,17 +84,19 @@ export default class Navbar extends React.Component {
         // Because css only supports writing downwards and we want to write upwards, we
         // are rotating the whole thing by 180deg and reversing the items
         return (
-            <OuterContainer>
-                <BlankSpace/>
-                <NavbarOuterWrapper>
-                    <NavbarWrapper>
-                        <CrownLogo href= "https://www.columbiaspectator.com/"/>
-                        <ItemContainer>
-                            {NavItems.reverse()}
-                        </ItemContainer>
-                    </NavbarWrapper>
-                </NavbarOuterWrapper>
-            </OuterContainer>
+            <NavbarWrapper>
+                <CrownLogo href= "https://www.columbiaspectator.com/"/>
+                <Desktop>
+                    <ItemContainer>
+                        {NavItems.reverse()}
+                    </ItemContainer>
+                </Desktop>
+                <MobileAndTablet>
+                    <ItemContainer>
+                        {NavItems}
+                    </ItemContainer>
+                </MobileAndTablet>
+            </NavbarWrapper>
         )
     }
 }
