@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Title from './containers/Title'
 import Section from './containers/Section'
 
+
 const sections = ["Class Days", "Senior Profiles", "Senior Columns"]
 
 class App extends React.PureComponent {
@@ -48,7 +49,9 @@ class App extends React.PureComponent {
     const adjustedScroll = currScroll + 0.4 * winHeight
 
     // let scrollingUp = this.prevScroll > window.scrollY
+   // if (adjustedScroll< top1){
 
+   // }
     if(adjustedScroll > top1 && adjustedScroll < top2){
       this.setState({navActive: 0})
     }
@@ -75,8 +78,10 @@ class App extends React.PureComponent {
       <ThemeProvider theme={Theme}>
         <React.Fragment>
           <GlobalStyles/>
+          
           <Navbar active={this.state.navActive} sections={sections} navigateTo={this.navigateTo}/>
           <Title sections={sections}/>
+          
           <Section name={sections[0]} data={GlobalData[sections[0]]} _ref={this.classDaysRef}/>
           <Section name={sections[1]} data={GlobalData[sections[1]]} _ref={this.seniorProfRef}/>
           <Section name={sections[2]} data={GlobalData[sections[2]]} _ref={this.seniorColRef}/>
