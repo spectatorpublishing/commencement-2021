@@ -45,7 +45,11 @@ const TitleButton = Button.extend`
     height:8vh;
     width:15vw;
     border: 5px;	
-    border-radius: 50px;	
+    border-radius: 50px;
+    @media only screen and (max-width: 992px){
+        width:50vw;
+        height:3vh;
+    }	
 `
 
 const SectionContainer=styled.div`
@@ -59,7 +63,7 @@ const SectionContainer=styled.div`
         flex-direction:column;
         justify-conent:space-around;
         width:50vw;
-        height:25vh;
+        height:40vh;
         overflow:hidden;
         text-align:center;
         text-decoration: underline; 
