@@ -10,7 +10,7 @@ const NavbarWrapper = styled.div`
     top: 0vh;
     z-index: 5;
     height:3.2rem;
-    background-color: white;
+    background-color: ${props => props.theme.cream};
     @media only screen and (min-width: 992px){
         font-size: 30px !important;
         flex-direction: column;
