@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
+    "react-button": "^1.2.1",
+    "react-button-component": "^1.0.0",
     "react-dom": "^16.8.6",
     "react-responsive-simple": "^0.1.2",
     "react-scripts": "3.0.1",

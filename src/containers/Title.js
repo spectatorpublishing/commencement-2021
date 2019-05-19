@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Button from 'react-button-component'
 
 const TitleWrapper = styled.div`
     width: 100vw;
@@ -11,23 +12,40 @@ const TitleWrapper = styled.div`
 `
 
 const ClassDaysNum = styled.div`
-    padding-left:15vw;
-    width:30vw;
-    font-size:2rem;
+    visibility:hidden;
+    @media only screen and (max-width: 992px){
+        visibility:visible;
+        padding-left:15vw;
+        width:35vw;
+        font-size:2rem;
+    }
 `
 const ClassDaysBody = styled.div`
-    width:80vw;
-    height:20vh;
+    visibility:hidden;
+    @media only screen and (max-width: 992px){
+        visibility:visible;
+        width:65vw;
+        height:15vh;
+    }
 `
 
 const ClassDaysContainer = styled.div`
-    display:flex;
-    flex-direction:inline-row;
-    justify-content:space-around;
+    visibility:hidden;
+    @media only screen and (max-width: 992px){
+        visibility:visible;
+        display:flex;
+        flex-direction:inline-row;
+        justify-content:space-around;
+        background:white;
+    }
 `
 
-const TitleButton = styled.div`
-
+const TitleButton = Button.extend`
+    background-color:white;
+    height:8vh;
+    width:15vw;
+    border: 5px;	
+    border-radius: 50px;	
 `
 
 const SectionContainer=styled.div`
@@ -45,6 +63,10 @@ const SectionContainer=styled.div`
         overflow:hidden;
         text-align:center;
         text-decoration: underline; 
+        color:white;
+        font-size:1.5rem;
+        font-weight:800;
+        padding-bottom:20vh;
     }
 `
 const CommencementHeader=styled.div`
@@ -53,25 +75,33 @@ const CommencementHeader=styled.div`
     width:100vw;
     justify-content:space-around;
     align-items:center;
+    color:white;
+    font-size:2.8rem;
+    font-weight:800;
     @media only screen and (max-width: 992px){
         word-wrap: break-word;
         width:50vw;
-        height:50vh;
+        padding-top:20vh;
+        height:20vh;
         text-align:center;
-        
-
+        color:white;
+        font-size:2.8rem;
+        font-weight:800;
     }
 `
 
 export default class Title extends React.Component {
+    
     render(){
         const SectionButtons = this.props.sections.map((el, i)=>(
-            <TitleButton key={i}>{el}</TitleButton>
+            <TitleButton onClick={()=>{this.props.navigateTo(i)}} key={i}>{el}</TitleButton>
         ))
         return(
             <TitleWrapper>
-                <CommencementHeader><h2>Commencement 2019</h2></CommencementHeader>
-                <SectionContainer>{SectionButtons}</SectionContainer>
+                <CommencementHeader>Commencement 2019</CommencementHeader>
+                <SectionContainer>
+                {SectionButtons}
+                </SectionContainer>
             </TitleWrapper>
         )
     }
