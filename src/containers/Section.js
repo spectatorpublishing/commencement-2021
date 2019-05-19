@@ -16,10 +16,11 @@ const HeaderWrapper = styled.div`
     @media only screen and (min-width: 992px){
         display: inline-flex;
         position: sticky;
-        height: 100%;
-        top: ${(window.innerHeight < window.innerWidth) ? "calc(20vw - 10vh)" : "30vh"};
+        align-self: flex-start;
+        top: 0;
+        height: 100vh;
+        align-items: center;
         color: ${props => props.theme.darkgray};
-        padding: 4rem 0;
     }
     @media only screen and (min-width: 1200px){
         width: 80%;
