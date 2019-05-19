@@ -42,13 +42,20 @@ const ClassDaysContainer = styled.div`
 
 const TitleButton = Button.extend`
     background-color:white;
-    height:8vh;
-    width:15vw;
+    height:9vh;
+    width:17vw;
     border: 5px;	
-    border-radius: 50px;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 10vw;
     @media only screen and (max-width: 992px){
+        font-size: 1.2rem;
         width:50vw;
         height:3vh;
+        padding-bottom: 0vw;
+        
+        height:9vh;
     }	
 `
 
@@ -56,8 +63,9 @@ const SectionContainer=styled.div`
     display:flex;
     flex-direction:row;
     height:15vh;
-    width:70vw;
-    justify-content:space-evenly;
+    width:80vw;
+    // background-color: green;
+    justify-content:space-between;
     @media only screen and (max-width: 992px){
         display:flex;
         flex-direction:column;
@@ -75,22 +83,26 @@ const SectionContainer=styled.div`
 `
 const CommencementHeader=styled.div`
     display:flex;
-    height:80vh;
+    height:85vh;
     width:100vw;
     justify-content:space-around;
     align-items:center;
     color:white;
-    font-size:2.8rem;
+    font-size:7.8rem;
     font-weight:800;
+    padding-bottom: 0vw;
+    text-transform: uppercase;
     @media only screen and (max-width: 992px){
+        padding-bottom: 30vw;
         word-wrap: break-word;
         width:50vw;
         padding-top:20vh;
         height:20vh;
         text-align:center;
         color:white;
-        font-size:2.8rem;
+        font-size:2.5rem;
         font-weight:800;
+        
     }
 `
 
