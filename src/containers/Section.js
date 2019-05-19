@@ -30,6 +30,9 @@ const HeaderWrapper = styled.div`
 const Header = styled.div`
     max-width: 35vw;
     margin-left: 10rem;
+    &>h1 {
+        margin-bottom: 1rem;
+    }
 `
 
 const HeaderBlurb = styled.div`
@@ -53,6 +56,9 @@ const HeaderMobileTitle = styled.div`
     padding: 2rem 0;
     background: ${props => props.theme.babyBlue};
     color: ${props => props.theme.cream};
+    &>h1{
+        margin: 0;
+    }
 `
 
 const HeaderMobileBlurb = styled.div`
@@ -61,6 +67,11 @@ const HeaderMobileBlurb = styled.div`
     padding: 1rem;
     background: ${props => props.theme.cream};
     color: ${props => props.theme.darkgray};
+    &>h3{
+        font-size: 1.5rem;
+        text-transform: none;
+        font-weight: 600;
+    }
 `
 
 const ArticlesWrapper = styled.div`
@@ -87,7 +98,7 @@ export default class Section extends React.Component {
                 <SectionWrapper ref={this.props._ref}>
                     <HeaderWrapper>
                         <Header>
-                            <h1 style={{"margin-bottom": "1rem"}}>{this.props.name}</h1>
+                            <h1>{this.props.name}</h1>
                             <HeaderBlurb>
                                 <h3>{this.props.blurb}</h3>
                             </HeaderBlurb>
@@ -97,10 +108,10 @@ export default class Section extends React.Component {
                         <MobileAndTablet>
                             <HeaderWrapperMobile>
                                 <HeaderMobileTitle>
-                                    <h1 style={{"margin": "0"}}>{this.props.name}</h1>
+                                    <h1>{this.props.name}</h1>
                                 </HeaderMobileTitle>
                                 <HeaderMobileBlurb>
-                                    <h3 style={{"font-size": "1.5rem", "text-transform": "none","font-weight": "600"}}>{this.props.blurb}</h3>
+                                    <h3>{this.props.blurb}</h3>
                                 </HeaderMobileBlurb>
                             </HeaderWrapperMobile>
                         </MobileAndTablet>

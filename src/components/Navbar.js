@@ -88,7 +88,7 @@ export default class Navbar extends React.Component {
                 <CrownLogo href= "https://www.columbiaspectator.com/"/>
                 <Desktop>
                     <ItemContainer>
-                        {NavItems.reverse()}
+                        {[...NavItems].reverse()}
                     </ItemContainer>
                 </Desktop>
                 <MobileAndTablet>
