@@ -1,19 +1,26 @@
 import React from 'react';
 import styled from 'styled-components'
 const OuterContainer = styled.div`
-    @media only screen and (min-width: 992px){
+    position: absolute;
+    top: 0vh;
+    left:0;
+     @media only screen and (min-width: 992px){
         position: absolute;
         top: 0;
         left:0;
-    }
+     }
 `;
 const BlankSpace =styled.div`
+    height: 100vh;
+    width: 100vw;
     @media only screen and (min-width: 992px){
         height: 100vh;
         width: 10vw;
     }
 `;
 const NavbarOuterWrapper =styled.div`
+    height: 870vh;
+    width: 100vw;
     @media only screen and (min-width: 992px){
         height: 468vh;
         width: 10vw
@@ -21,17 +28,19 @@ const NavbarOuterWrapper =styled.div`
 `;
 const NavbarWrapper = styled.div`
     display: flex;
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0vh;
     z-index: 5;
-    height: 100%;
+    height:3.2rem;
+    background-color: white;
     @media only screen and (min-width: 992px){
         font-size: 30px !important;
         flex-direction: column;
         position: sticky;
         width:10vw;
         height:100vh;
+        background-color: transparent;
     }
 `
 
@@ -39,7 +48,7 @@ const ItemContainer = styled.div`
     display: flex;
     position: relative;
     justify-content: space-between;
-    margin-top: 5vh;
+    margin-top: 1.3rem;
     margin-left: 1rem;
     height:1.2rem;
     width: 82vw;
@@ -75,9 +84,9 @@ const CrownLogo =styled.a`
     background-image: url("https://s3.amazonaws.com/year-in-review-assets/spectator-logo.png?fbclid=IwAR3Li82vFjfxfsNhBbfEkqAAwV3IhXkyT6Ds5HJKos7fS24-ry81K2pJn6g");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 10vw;
+    height: 100%;
     width: 10vw;
-    top: 3.4vh;
+    top: .5rem;
     left: 2vw;
     @media only screen and (min-width: 992px){
         height: 4vw;
