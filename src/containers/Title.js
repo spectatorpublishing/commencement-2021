@@ -7,6 +7,7 @@ const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("https://www.motherjones.com/wp-content/uploads/2018/06/panda-research-6-27-18-2.jpg")
 `
 
 const ClassDaysNum = styled.div`
