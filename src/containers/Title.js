@@ -56,8 +56,8 @@ const SectionContainer=styled.div`
     display:flex;
     flex-direction:row;
     height:15vh;
-    width:100vw;
-    justify-content:space-around;
+    width:70vw;
+    justify-content:space-evenly;
     @media only screen and (max-width: 992px){
         display:flex;
         flex-direction:column;
@@ -75,7 +75,7 @@ const SectionContainer=styled.div`
 `
 const CommencementHeader=styled.div`
     display:flex;
-    height:85vh;
+    height:80vh;
     width:100vw;
     justify-content:space-around;
     align-items:center;
