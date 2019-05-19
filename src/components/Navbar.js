@@ -2,23 +2,21 @@ import React from 'react';
 import styled from 'styled-components'
 const OuterContainer = styled.div`
     @media only screen and (min-width: 992px){
-    position: absolute;
-    top: 0;
-    left:0;
-    // display: flex;
-    // justify-content: column;
+        position: absolute;
+        top: 0;
+        left:0;
     }
 `;
 const BlankSpace =styled.div`
     @media only screen and (min-width: 992px){
-    height: 100vh;
-    width: 10vw;
+        height: 100vh;
+        width: 10vw;
     }
 `;
 const NavbarOuterWrapper =styled.div`
     @media only screen and (min-width: 992px){
-    height: 468vh;
-    width: 10vw
+        height: 468vh;
+        width: 10vw
     }
 `;
 const NavbarWrapper = styled.div`
@@ -28,7 +26,6 @@ const NavbarWrapper = styled.div`
     top: 0vh;
     z-index: 5;
     height: 100%;
-
     @media only screen and (min-width: 992px){
         font-size: 30px !important;
         flex-direction: column;
@@ -59,10 +56,6 @@ const ItemContainer = styled.div`
         border-bottom: none;  
         border-left: solid grey 1px;    
     }
-`
-
-const NavItemContainer =styled.div`
-    padding-left: 1vw;
 `
 
 const NavItem = styled.div`
@@ -106,14 +99,14 @@ export default class Navbar extends React.Component {
         return (
             <OuterContainer>
                 <BlankSpace/>
-            <NavbarOuterWrapper>
-            <NavbarWrapper>
-                <CrownLogo href= "https://www.columbiaspectator.com/"/>
-                <ItemContainer>
-                    {NavItems.reverse()}
-                </ItemContainer>
-            </NavbarWrapper>
-            </NavbarOuterWrapper>
+                <NavbarOuterWrapper>
+                    <NavbarWrapper>
+                        <CrownLogo href= "https://www.columbiaspectator.com/"/>
+                        <ItemContainer>
+                            {NavItems.reverse()}
+                        </ItemContainer>
+                    </NavbarWrapper>
+                </NavbarOuterWrapper>
             </OuterContainer>
         )
     }
