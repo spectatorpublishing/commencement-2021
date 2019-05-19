@@ -1,15 +1,40 @@
 import React from 'react';
 import styled from 'styled-components'
-
+const OuterContainer = styled.div`
+    @media only screen and (min-width: 992px){
+    position: absolute;
+    top: 0;
+    left:0;
+    // display: flex;
+    // justify-content: column;
+    }
+`;
+const BlankSpace =styled.div`
+    @media only screen and (min-width: 992px){
+    height: 100vh;
+    width: 10vw;
+    }
+`;
+const NavbarOuterWrapper =styled.div`
+    @media only screen and (min-width: 992px){
+    height: 468vh;
+    width: 10vw
+    }
+`;
 const NavbarWrapper = styled.div`
     display: flex;
     position: fixed;
     left: 0;
     top: 0vh;
     z-index: 5;
+    height: 100%;
+
     @media only screen and (min-width: 992px){
         font-size: 30px !important;
         flex-direction: column;
+        position: sticky;
+        width:10vw;
+        height:100vh;
     }
 `
 
@@ -19,6 +44,7 @@ const ItemContainer = styled.div`
     justify-content: space-between;
     margin-top: 5vh;
     margin-left: 1rem;
+    height:1.2rem;
     width: 82vw;
     border-bottom: solid grey 1px;
     @media only screen and (min-width: 992px){
@@ -78,12 +104,17 @@ export default class Navbar extends React.Component {
         // Because css only supports writing downwards and we want to write upwards, we
         // are rotating the whole thing by 180deg and reversing the items
         return (
+            <OuterContainer>
+                <BlankSpace/>
+            <NavbarOuterWrapper>
             <NavbarWrapper>
                 <CrownLogo href= "https://www.columbiaspectator.com/"/>
                 <ItemContainer>
                     {NavItems.reverse()}
                 </ItemContainer>
             </NavbarWrapper>
+            </NavbarOuterWrapper>
+            </OuterContainer>
         )
     }
 }
