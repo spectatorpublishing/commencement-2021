@@ -35,6 +35,16 @@ const SectionContainer=styled.div`
     height:15vh;
     width:100vw;
     justify-content:space-around;
+    @media only screen and (max-width: 992px){
+        display:flex;
+        flex-direction:column;
+        justify-conent:space-around;
+        width:50vw;
+        height:25vh;
+        overflow:hidden;
+        text-align:center;
+        text-decoration: underline; 
+    }
 `
 const CommencementHeader=styled.div`
     display:flex;
@@ -44,8 +54,11 @@ const CommencementHeader=styled.div`
     align-items:center;
     @media only screen and (max-width: 992px){
         word-wrap: break-word;
-        width:100vw;
-  
+        width:50vw;
+        height:50vh;
+        text-align:center;
+        
+
     }
 `
 
