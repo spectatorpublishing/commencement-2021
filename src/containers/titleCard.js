@@ -29,7 +29,10 @@ const Button = styled.div`
     width: 8em;
     overflow: hidden;
     padding: 1em;
+    text-decoration: none;
+    :hover{background-color: rgb(202,202,201); color: black; text-decoration: none;};
 `
+
 const Desc = styled.div`
     font-size: 1.3em;
 `
@@ -84,6 +87,8 @@ const list = [
     }
 ]
 
+
+
 export default class Objects extends React.Component {
 	render() {
         const Lists = list.map(list => <List list = {list}/>)
@@ -95,7 +100,9 @@ export default class Objects extends React.Component {
                 <br/>
                 <Categories>{Lists}</Categories>
                 <br/>
-                <Button href={this.props.info.printLink}>SEE IT IN PRINT</Button>
+                <a href={this.props.info.printLink}>
+                <Button>SEE IT IN PRINT</Button>
+                </a>
             </BigPapa>	
 		)
 	}
