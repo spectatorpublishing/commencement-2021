@@ -8,11 +8,13 @@ const ArticleBoxWrapper = styled.div`
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
+    color: ${props => props.theme.darkgraygit};
     @media only screen and (min-width: 992px){
         flex-direction: row;
         justify-content: space-between;
         align-items: unset;
         text-align: left;
+        color: ${props => props.theme.cream};
     }
 `
 
@@ -39,6 +41,10 @@ const ArticleInfo = styled.div`
 `
 
 export default class ArticleBox extends React.Component {
+    // constructor(props){
+    //     super(props);
+    // }
+
     render(){
         return(<ArticleBoxWrapper id={this.props.id}>
             <ArticleImage>

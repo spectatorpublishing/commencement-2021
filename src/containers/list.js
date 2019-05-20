@@ -9,19 +9,34 @@ const BigPapa = styled.div`
 
 const Name = styled.div`
     font-weight: bold;
+    &>h1{
+        font-size: 1rem;
+        line-height: 2rem;
+        margin: 0;
+    }
 `
 
 const Desc = styled.div`
     text-transform: capitalize;
+    &>h3{
+        font-size: 0.5rem;
+        line-height: 0.5rem;
+        margin: 0;
+    }
 `
 
-export default class Objects extends React.Component {
+export default class List extends React.Component {
 	render() {
+        var newID = this.props.list.name;
+        var id = newID.replace(/ /g, "-");
+        id = "#" + id;
 		return (
+            <a href={id}>
 			<BigPapa>
-                <Name onClick='window.scrollTo({top: document.querySelector(`${this.props.name} ${i}`).replace(/ /g, "-").offsetTop, behavior: "smooth"})'>{this.props.list.name}</Name>
-                <Desc>{this.props.list.description}</Desc>
+                <Name><h1>{this.props.list.name}</h1></Name>
+                <Desc><h3>{this.props.list.description}</h3></Desc>
             </BigPapa>	
+            </a>
 		)
 	}
 }

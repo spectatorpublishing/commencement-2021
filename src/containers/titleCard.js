@@ -1,15 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import List from './list.js';
+import List from './List.js';
 
 const BigPapa = styled.div`
     display: flex;
     flex-direction: column;
+    max-width: 35vw;
+    margin-left: 10rem;
 `
 const Title = styled.div`
     text-transform: capitalize;
     font-size: 3.5em;
     font-weight: bold;
+
+    &>h1{
+        margin: 0;
+    }
 `
 
 const Categories = styled.div`
@@ -19,81 +25,38 @@ const Categories = styled.div`
 `
 
 const Button = styled.div`
-    background-color: rgb(117,116,113);
+    background-color: ${props => props.theme.darkgray};
     border-radius: 25px;
     text-transform: capitalize;
-    color: rgb(217,217,209);
+    color: ${props => props.theme.lightgray};
     display: flex; 
     align-content: center;
     justify-content: center; 
     width: 8em;
     overflow: hidden;
     padding: 1em;
+    text-decoration: none;
+    :hover{color: ${props => props.theme.cream}; text-decoration: none;};
 `
+
 const Desc = styled.div`
     font-size: 1.3em;
 `
-
-const list = [ 
-    {name: "Person Named",
-    description: "CC '19"
-    },
-
-    {name: "Less Important",
-    description: "BC '19"
-    },
-
-    {name: "Person Named",
-    description: "CC '19"
-    },
-
-    {name: "Less Important",
-    description: "BC '19"
-    },
-
-    {name: "Person Named",
-    description: "CC '19"
-    },
-
-    {name: "Less Important",
-    description: "BC '19"
-    },
-
-    {name: "Person Named",
-    description: "CC '19"
-    },
-
-    {name: "Less Important",
-    description: "BC '19"
-    },
-
-    {name: "Person Named",
-    description: "CC '19"
-    },
-
-    {name: "Less Important",
-    description: "BC '19"
-    },
-
-    {name: "Person Named",
-    description: "CC '19"
-    },
-
-    {name: "Less Important",
-    description: "BC '19"
-    }
-]
-
 export default class Objects extends React.Component {
 	render() {
-        const Lists = list.map(list => <List list = {list}/>)
+        const table = this.props.info.list;
+        var lists;
+        if(table){
+            lists = table.map(table => <List list = {table}/>);
+        }
+        else lists = "";
 		return (
 			<BigPapa>
-                <Title>{this.props.info.title}</Title>
+                <Title><h1>{this.props.info.title}</h1></Title>
                 <br/>
-                <Desc>{this.props.info.titleDesc}</Desc>
+                <Desc><h3>{this.props.info.titleDesc}</h3></Desc>
                 <br/>
-                <Categories>{Lists}</Categories>
+                <Categories>{lists}</Categories>
                 <br/>
                 <Button href={this.props.info.printLink}>SEE IT IN PRINT</Button>
             </BigPapa>	
