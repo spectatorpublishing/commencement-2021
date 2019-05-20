@@ -5,16 +5,16 @@ const Credits = {
             title: "News Editor"
         },
         {
-            name: "Karen Xia",
-            title: "News Editor"
+            name: "Valeria Escobar",
+            title: "Staff Writer"
         },
         {
-            name: "Karen Xia",
-            title: "News Editor"
+            name: "Shubham Saharan",
+            title: "Staff Writer"
         },
         {
-            name: "Karen Xia",
-            title: "News Editor"
+            name: "Marianna Najman-Franks",
+            title: "Staff Writer"
         },
     ],
     "A&E": [
