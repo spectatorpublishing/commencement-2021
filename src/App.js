@@ -75,23 +75,23 @@ class App extends React.PureComponent {
       <ThemeProvider theme={Theme}>
         <React.Fragment>
           <GlobalStyles/>
-          <Title sections={sections}/>
+          <Title sections={sections} navigateTo={this.navigateTo}/>
           <Navbar active={this.state.navActive} sections={sections} navigateTo={this.navigateTo}/>
           <Section 
             name={sections[0]} 
-            blurb="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." 
+            blurb="Read what this year's keynote speakers had to say to graduating Columbia College, School of Engineering and Applied Science, General Studies, and Barnard students." 
             data={GlobalData[sections[0]]} 
             _ref={this.classDaysRef}
           />
           <Section 
             name={sections[1]} 
-            blurb="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." 
+            blurb="Across the four undergraduate schools, the class of 2019 boasts exceptional leaders, thinkers, athletes, and artists. Here is a selection of the graduating seniors who have made a lasting impact on the campus community." 
             data={GlobalData[sections[1]]} 
             _ref={this.seniorProfRef}
           />         
           <Section 
             name={sections[2]} 
-            blurb="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." 
+            blurb="Members of Spectator’s graduating class reflect on what they’ve learned and how they’ve grown from their time at the organization." 
             data={GlobalData[sections[2]]} 
             _ref={this.seniorColRef}
           />
