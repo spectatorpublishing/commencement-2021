@@ -27,10 +27,10 @@ const ArticleBoxWrapper = styled.div`
         transition: right 0.3s;
     }
     &:hover div:first-of-type{
-        left: 3px;
+        left: 6px;
     }
     &:hover div:last-of-type{
-        right: 7px;
+        right: 10px;
     }
 `
 

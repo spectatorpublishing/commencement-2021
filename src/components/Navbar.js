@@ -49,6 +49,7 @@ const NavItem = styled.div`
     border-bottom: 2px solid ${props => props.active ? props.theme.lightGray : "transparent"};
     color:grey;
     cursor: pointer;
+    transition: border-color 0.5s ease-in;
     @media only screen and (min-width: 992px){
         writing-mode: vertical-rl;
         padding-left: 1vw;
