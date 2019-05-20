@@ -58,8 +58,6 @@ const TitleButton = Button.extend`
         height:.3vh;
         margin-bottom: 8vh;
         text-transform: uppercase;
-        
-       
     }	
 `
 
