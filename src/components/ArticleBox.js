@@ -39,12 +39,8 @@ const ArticleInfo = styled.div`
 `
 
 export default class ArticleBox extends React.Component {
-    // constructor(props){
-    //     super(props);
-    // }
-
     render(){
-        return(<ArticleBoxWrapper>
+        return(<ArticleBoxWrapper id={this.props.id}>
             <ArticleImage>
                 <a href={this.props.data.link}>
                     <img src={this.props.data.img} alt={this.props.data.title}/>
