@@ -8,13 +8,29 @@ const ArticleBoxWrapper = styled.div`
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
-    color: ${props => props.theme.darkgray};
+    color: ${props => props.theme.darkgraygit};
     @media only screen and (min-width: 992px){
         flex-direction: row;
         justify-content: space-between;
         align-items: unset;
         text-align: left;
         color: ${props => props.theme.cream};
+    }
+    & div:first-of-type{
+        position: relative;
+        left: 0;
+        transition: left 0.3s;
+    }
+    & div:last-of-type{
+        position: relative;
+        right: 0;
+        transition: right 0.3s;
+    }
+    &:hover div:first-of-type{
+        left: 3px;
+    }
+    &:hover div:last-of-type{
+        right: 7px;
     }
 `
 
@@ -41,6 +57,10 @@ const ArticleInfo = styled.div`
 `
 
 export default class ArticleBox extends React.Component {
+    // constructor(props){
+    //     super(props);
+    // }
+
     render(){
         return(<ArticleBoxWrapper id={this.props.id}>
             <ArticleImage>

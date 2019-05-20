@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components'
+<<<<<<< HEAD
 import {MobileAndTablet, Desktop} from 'react-responsive-simple'
 
+=======
+import TitleCard from './TitleCard.js';
+import {MobileAndTablet, Desktop} from 'react-responsive-simple'
+>>>>>>> master
 import ArticleBox from '../components/ArticleBox.js'
 
 const SectionWrapper = styled.div`
@@ -84,6 +89,7 @@ const ArticlesWrapper = styled.div`
     padding: 4rem 0;
 `
 
+<<<<<<< HEAD
 const info = [
     {title: "CLASS DAYS",
     titleDesc: "Across the four undergraduate schools, the class of 2018 boasts exceptional leaders, thinkers, athletes, and artists. Here is a selection of the graduating seniors who have made a lasting impact on the campus community.",
@@ -91,12 +97,22 @@ const info = [
     }
 ]
 
+=======
+>>>>>>> master
 export default class Section extends React.Component {
     render(){
+        var list = [];
         const Articles = this.props.data.map((el, i) => {
-            let id = (`${this.props.name} ${i}`).replace(/ /g, '-')
+            var newID = el.title;
+            var id = newID.replace(/ /g, "-");
+            console.log(id);
+            list[i] = {
+                name: el.title,
+                description: el.author
+            }
             return <ArticleBox key={i} data={el} id={id}/>
         })
+<<<<<<< HEAD
         return(
                 <SectionWrapper ref={this.props._ref}>
                     <HeaderWrapper>
@@ -106,6 +122,20 @@ export default class Section extends React.Component {
                                 <h3>{this.props.blurb}</h3>
                             </HeaderBlurb>
                         </Header>
+=======
+        const info = [
+            {title: this.props.name,
+            titleDesc: this.props.blurb,
+            list: list,
+            printLink: "http://www.google.com"
+            }
+        ]
+        const TitleCards = info.map(info => <TitleCard info = {info}/>)
+        return(
+                <SectionWrapper ref={this.props._ref}>
+                    <HeaderWrapper>
+                        {TitleCards}
+>>>>>>> master
                     </HeaderWrapper>
                     <ArticlesWrapper>
                         <MobileAndTablet>
