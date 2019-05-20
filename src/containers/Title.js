@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const TitleWrapper = styled.div`
     overflow: hidden;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
