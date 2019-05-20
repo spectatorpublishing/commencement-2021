@@ -2,16 +2,18 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     @import url("https://use.typekit.net/oun7bhh.css");
+    @import url("https://use.typekit.net/oun7bhh.css");
     h1 {
         font-family: brandon-grotesque;
         font-weight: 700;
         font-style: normal;
         font-size: 4rem;
-        margin-bottom: 1rem;
+        line-height: 3.8rem;
+        margin-bottom: 3rem;
         text-transform: uppercase;
     }
     h2 {
-        font-family: brandon-grotesque;
+        font-family: filson-pro;
         font-weight: 700;
         font-style: normal;
         font-size: 1.5rem;
@@ -28,7 +30,6 @@ export const GlobalStyles = createGlobalStyle`
             font-size: 1rem;
         }
     }
-
     h4 {
         font-family: brandon-grotesque;
         font-weight: 400;
@@ -51,7 +52,7 @@ export const GlobalStyles = createGlobalStyle`
 export const Theme = {
     black: "#000000",
     white: "#FFFFFF",
-    darkgray: "#6D6D6D",
+    darkgray: "#707070",
     lightgray: "#B4B4B4",
     cream: "#FCFBF7",
     babyBlue: "#B5E0F7",
