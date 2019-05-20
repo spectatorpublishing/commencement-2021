@@ -8,7 +8,7 @@ const ArticleBoxWrapper = styled.div`
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
-    color: ${props => props.theme.darkgray};
+    color: ${props => props.theme.darkgraygit};
     @media only screen and (min-width: 992px){
         flex-direction: row;
         justify-content: space-between;
@@ -62,7 +62,7 @@ export default class ArticleBox extends React.Component {
     // }
 
     render(){
-        return(<ArticleBoxWrapper>
+        return(<ArticleBoxWrapper id={this.props.id}>
             <ArticleImage>
                 <a href={this.props.data.link}>
                     <img src={this.props.data.img} alt={this.props.data.title}/>

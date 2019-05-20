@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
+import TitleCard from './TitleCard.js';
 import {MobileAndTablet, Desktop} from 'react-responsive-simple'
-
 import ArticleBox from '../components/ArticleBox.js'
 
 const SectionWrapper = styled.div`
@@ -86,23 +86,30 @@ const ArticlesWrapper = styled.div`
 `
 
 export default class Section extends React.Component {
-    // constructor(props){
-    //     super(props)
-    // }
-
     render(){
-        const Articles = this.props.data.map((el, i) => (
-            <ArticleBox key={i} data={el}/>
-        ))
+        var list = [];
+        const Articles = this.props.data.map((el, i) => {
+            var newID = el.title;
+            var id = newID.replace(/ /g, "-");
+            console.log(id);
+            list[i] = {
+                name: el.title,
+                description: el.author
+            }
+            return <ArticleBox key={i} data={el} id={id}/>
+        })
+        const info = [
+            {title: this.props.name,
+            titleDesc: this.props.blurb,
+            list: list,
+            printLink: "http://www.google.com"
+            }
+        ]
+        const TitleCards = info.map(info => <TitleCard info = {info}/>)
         return(
                 <SectionWrapper ref={this.props._ref}>
                     <HeaderWrapper>
-                        <Header>
-                            <h1>{this.props.name}</h1>
-                            <HeaderBlurb>
-                                <h3>{this.props.blurb}</h3>
-                            </HeaderBlurb>
-                        </Header>
+                        {TitleCards}
                     </HeaderWrapper>
                     <ArticlesWrapper>
                         <MobileAndTablet>
