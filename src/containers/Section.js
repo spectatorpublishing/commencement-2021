@@ -97,12 +97,13 @@ export default class Section extends React.Component {
             let id = (`${this.props.name} ${i}`).replace(/ /g, '-')
             return <ArticleBox key={i} data={el} id={id}/>
         })
-        const TitleCards = info.map(info => <TitleCard info = {info}/>)
         return(
                 <SectionWrapper ref={this.props._ref}>
                     <HeaderWrapper>
                         <Header>
                             <h1>{this.props.name}</h1>
+                            <HeaderBlurb>
+                                <h3>{this.props.blurb}</h3>
                             </HeaderBlurb>
                         </Header>
                     </HeaderWrapper>
