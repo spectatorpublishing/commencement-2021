@@ -9,6 +9,7 @@ const BigPapa = styled.div`
 
 const Name = styled.div`
     font-weight: bold;
+    :hover{transform: scale(1.1);};
 `
 
 const Desc = styled.div`
