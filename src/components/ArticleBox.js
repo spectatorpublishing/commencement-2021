@@ -16,6 +16,22 @@ const ArticleBoxWrapper = styled.div`
         text-align: left;
         color: ${props => props.theme.cream};
     }
+    & div:first-of-type{
+        position: relative;
+        left: 0;
+        transition: left 0.3s;
+    }
+    & div:last-of-type{
+        position: relative;
+        right: 0;
+        transition: right 0.3s;
+    }
+    &:hover div:first-of-type{
+        left: 3px;
+    }
+    &:hover div:last-of-type{
+        right: 7px;
+    }
 `
 
 const ArticleImage = styled.div`
