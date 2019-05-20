@@ -42,20 +42,24 @@ const ClassDaysContainer = styled.div`
 
 const TitleButton = Button.extend`
     background-color:white;
-    height:9vh;
-    width:17vw;
+    height:8vh;
+    width:16vw;
     border: 5px;	
-    border-radius: 25px;
+    border-radius: 28px;
     font-size: 2rem;
     font-weight: bold;
     border-bottom: 10vw;
+    text-shadow: 1px 9px 25px #515151;
+    box-shadow: 0px -2px 20px #515151;
+    color: #515151;
     @media only screen and (max-width: 992px){
-        font-size: 1.2rem;
-        width:50vw;
-        height:3vh;
-        padding-bottom: 0vw;
+        font-size: 1.3rem;
+        width:100%;
+        height:.3vh;
+        margin-bottom: 8vh;
+        text-transform: uppercase;
         
-        height:9vh;
+       
     }	
 `
 
@@ -64,13 +68,12 @@ const SectionContainer=styled.div`
     flex-direction:row;
     height:15vh;
     width:80vw;
-    // background-color: green;
     justify-content:space-between;
     @media only screen and (max-width: 992px){
         display:flex;
         flex-direction:column;
         justify-conent:space-around;
-        width:50vw;
+        width:60vw;
         height:40vh;
         overflow:hidden;
         text-align:center;
@@ -92,17 +95,17 @@ const CommencementHeader=styled.div`
     font-weight:800;
     padding-bottom: 0vw;
     text-transform: uppercase;
+    text-shadow: 0px -2px 20px #515151;
     @media only screen and (max-width: 992px){
         padding-bottom: 30vw;
         word-wrap: break-word;
         width:50vw;
-        padding-top:20vh;
         height:20vh;
+        padding-top:20vh;
         text-align:center;
         color:white;
-        font-size:2.5rem;
+        font-size:2.3rem;
         font-weight:800;
-        
     }
 `
 
