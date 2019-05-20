@@ -24,7 +24,7 @@ const Categories = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
 `
 
-const Button = styled.div`
+const Button = styled.a`
     background-color: ${props => props.theme.darkgray};
     border-radius: 25px;
     text-transform: capitalize;

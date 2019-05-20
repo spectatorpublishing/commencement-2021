@@ -88,110 +88,12 @@ class App extends React.PureComponent {
             blurb="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." 
             data={GlobalData[sections[1]]} 
             _ref={this.seniorProfRef}
-            list={[
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              }
-            ]}
           />         
           <Section 
             name={sections[2]} 
             blurb="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." 
             data={GlobalData[sections[2]]} 
             _ref={this.seniorColRef}
-            list={[
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              },
-          
-              {name: "Person Named",
-              description: "CC '19"
-              },
-          
-              {name: "Less Important",
-              description: "BC '19"
-              }
-            ]}
           />
           </React.Fragment>
       </ThemeProvider>
