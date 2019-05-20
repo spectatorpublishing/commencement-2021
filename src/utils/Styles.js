@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     @import url("https://use.typekit.net/oun7bhh.css");
-    @import url("https://use.typekit.net/oun7bhh.css");
     h1 {
         font-family: brandon-grotesque;
         font-weight: 700;

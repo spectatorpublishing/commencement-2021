@@ -8,7 +8,9 @@ const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("https://www.motherjones.com/wp-content/uploads/2018/06/panda-research-6-27-18-2.jpg")
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/T7ZAZKITDRAN7L55GLRV6LU6OQ.jpg");
+    background-size: cover;
+    background-position: center;
 `
 
 const ClassDaysNum = styled.div`
@@ -113,6 +115,18 @@ const CommencementHeader=styled.div`
     }
 `
 
+const Logo = styled.a`
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 200px;
+    height: 50px;
+    background-image:  url('https://s3.amazonaws.com/year-in-review-assets/whitemasthead.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+`
+
 export default class Title extends React.Component {
     
     render(){
@@ -121,6 +135,7 @@ export default class Title extends React.Component {
         ))
         return(
             <TitleWrapper>
+                <Logo href="https://www.columbiaspectator.com/"/>
                 <CommencementHeader><h1>Commencement 2019</h1></CommencementHeader>
                 <SectionContainer>
                 {SectionButtons}
