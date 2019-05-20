@@ -1,7 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const BigPapa = styled.div`
+const Container = styled.a` 
+    transition: 0.2s;
+    transform-origin: 1cm center;
+    &:hover{
+        text-decoration: none;
+        transform: scale(1.15);
+    }
+    &:visited{
+        text-decoration: none;
+    }
+`
+
+const Contained = styled.div`
     display: flex;
     flex-direction: column;
     padding: .5em;
@@ -31,12 +43,12 @@ export default class List extends React.Component {
         var id = newID.replace(/ /g, "-");
         id = "#" + id;
 		return (
-            <a href={id}>
-			<BigPapa>
-                <Name><h1>{this.props.list.name}</h1></Name>
-                <Desc><h3>{this.props.list.description}</h3></Desc>
-            </BigPapa>	
-            </a>
+            <Container href={id}>
+                <Contained>
+                    <Name><h1>{this.props.list.name}</h1></Name>
+                    <Desc><h3>{this.props.list.description}</h3></Desc>
+                </Contained>	
+            </Container>
 		)
 	}
 }

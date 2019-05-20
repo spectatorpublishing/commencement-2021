@@ -21,7 +21,9 @@ const Title = styled.div`
 const Categories = styled.div`
     display: grid;
     font-size: 1em;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-column: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
 `
 
 const Button = styled.a`
