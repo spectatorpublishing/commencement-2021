@@ -1,12 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-<<<<<<< HEAD
-import {MobileAndTablet, Desktop} from 'react-responsive-simple'
-
-=======
 import TitleCard from './TitleCard.js';
 import {MobileAndTablet, Desktop} from 'react-responsive-simple'
->>>>>>> master
 import ArticleBox from '../components/ArticleBox.js'
 
 const SectionWrapper = styled.div`
@@ -89,16 +84,6 @@ const ArticlesWrapper = styled.div`
     padding: 4rem 0;
 `
 
-<<<<<<< HEAD
-const info = [
-    {title: "CLASS DAYS",
-    titleDesc: "Across the four undergraduate schools, the class of 2018 boasts exceptional leaders, thinkers, athletes, and artists. Here is a selection of the graduating seniors who have made a lasting impact on the campus community.",
-    printLink: "https://files-cardinalatwork-stanford-edu.s3-us-west-2.amazonaws.com/s3fs-public/styles/9-col-banner/public/feb_2019_uhr_rwc_article_istock-952726174.png?itok=74InHOIl"
-    }
-]
-
-=======
->>>>>>> master
 export default class Section extends React.Component {
     render(){
         var list = [];
@@ -112,17 +97,6 @@ export default class Section extends React.Component {
             }
             return <ArticleBox key={i} data={el} id={id}/>
         })
-<<<<<<< HEAD
-        return(
-                <SectionWrapper ref={this.props._ref}>
-                    <HeaderWrapper>
-                        <Header>
-                            <h1>{this.props.name}</h1>
-                            <HeaderBlurb>
-                                <h3>{this.props.blurb}</h3>
-                            </HeaderBlurb>
-                        </Header>
-=======
         const info = [
             {title: this.props.name,
             titleDesc: this.props.blurb,
@@ -135,7 +109,6 @@ export default class Section extends React.Component {
                 <SectionWrapper ref={this.props._ref}>
                     <HeaderWrapper>
                         {TitleCards}
->>>>>>> master
                     </HeaderWrapper>
                     <ArticlesWrapper>
                         <MobileAndTablet>
