@@ -14,11 +14,14 @@ const HeaderWrapper = styled.div`
     flex-direction: column;
     max-width: 35vw;
     margin-left: 10rem;
+    justify-content: flex-start;
     @media only screen and (min-width: 992px){
-        display: inline-flex;
         position: sticky;
-        top: 40vh;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        top: 50%;
         height: 100%;
+        left: 25%;
     }
 `
 
@@ -33,14 +36,6 @@ const ArticlesWrapper = styled.div`
 
 const info = [
     {title: "CLASS DAYS",
-    titleDesc: "Across the four undergraduate schools, the class of 2018 boasts exceptional leaders, thinkers, athletes, and artists. Here is a selection of the graduating seniors who have made a lasting impact on the campus community.",
-    printLink: "https://files-cardinalatwork-stanford-edu.s3-us-west-2.amazonaws.com/s3fs-public/styles/9-col-banner/public/feb_2019_uhr_rwc_article_istock-952726174.png?itok=74InHOIl"
-    },
-    {title: "SENIOR PROFILES",
-    titleDesc: "Across the four undergraduate schools, the class of 2018 boasts exceptional leaders, thinkers, athletes, and artists. Here is a selection of the graduating seniors who have made a lasting impact on the campus community.",
-    printLink: "https://files-cardinalatwork-stanford-edu.s3-us-west-2.amazonaws.com/s3fs-public/styles/9-col-banner/public/feb_2019_uhr_rwc_article_istock-952726174.png?itok=74InHOIl"
-    },
-    {title: "SENIOR COLUMNS",
     titleDesc: "Across the four undergraduate schools, the class of 2018 boasts exceptional leaders, thinkers, athletes, and artists. Here is a selection of the graduating seniors who have made a lasting impact on the campus community.",
     printLink: "https://files-cardinalatwork-stanford-edu.s3-us-west-2.amazonaws.com/s3fs-public/styles/9-col-banner/public/feb_2019_uhr_rwc_article_istock-952726174.png?itok=74InHOIl"
     }
