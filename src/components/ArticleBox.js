@@ -8,11 +8,13 @@ const ArticleBoxWrapper = styled.div`
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
+    color: ${props => props.theme.darkgray};
     @media only screen and (min-width: 992px){
         flex-direction: row;
         justify-content: space-between;
         align-items: unset;
         text-align: left;
+        color: ${props => props.theme.cream};
     }
 `
 
