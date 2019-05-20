@@ -25,10 +25,10 @@ const Categories = styled.div`
 `
 
 const Button = styled.a`
-    background-color: ${props => props.theme.darkgray};
+    background-color: ${props => props.theme.lightgray};
     border-radius: 25px;
     text-transform: capitalize;
-    color: ${props => props.theme.lightgray};
+    color: ${props => props.theme.cream};
     display: flex; 
     align-content: center;
     justify-content: center; 
@@ -36,7 +36,7 @@ const Button = styled.a`
     overflow: hidden;
     padding: 1em;
     text-decoration: none;
-    :hover{color: ${props => props.theme.cream}; text-decoration: none;};
+    :hover{color: ${props => props.theme.darkgray}; text-decoration: none;};
 `
 
 const Desc = styled.div`
@@ -58,7 +58,7 @@ export default class Objects extends React.Component {
                 <br/>
                 <Categories>{lists}</Categories>
                 <br/>
-                <Button href={this.props.info.printLink}>SEE IT IN PRINT</Button>
+                <Button href={this.props.info.printLink}><h3>SEE IT IN PRINT</h3></Button>
             </BigPapa>	
 		)
 	}
