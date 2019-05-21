@@ -2,7 +2,6 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles, Theme } from './utils/Styles'
 import GlobalData from './utils/GlobalData'
-// import AcknowledgementData from './utils/Acknowledgements'
 
 import Navbar from './components/Navbar'
 import Title from './containers/Title'
@@ -97,7 +96,7 @@ class App extends React.PureComponent {
             data={GlobalData[sections[2]]} 
             _ref={this.seniorColRef}
           />
-          <Acknowledgements  />
+          <Acknowledgements/>
         </React.Fragment>
       </ThemeProvider>
     );
