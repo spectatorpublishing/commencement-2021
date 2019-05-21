@@ -31,8 +31,11 @@ const Categories = styled.div`
     display: grid;
     font-size: 1rem;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 25%;
     grid-auto-flow: column;
     max-width: 100%;
+    max-height: 50vh;
+    hyphens: manual;
     @media only screen and (max-height: 650px){
         grid-template-rows: 1fr 1fr;
         overflow-y: hidden;

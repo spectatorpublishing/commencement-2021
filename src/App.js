@@ -86,13 +86,13 @@ class App extends React.PureComponent {
           />
           <Section 
             name={sections[1]} 
-            blurb="Across the four undergraduate schools, the class of 2019 boasts exceptional leaders, thinkers, athletes, and artists. Here is a selection of the graduating seniors who have made a lasting impact on the campus community." 
+            blurb="The class of 2019 has produced incredible leaders, activists, artists, athletes, and more. Here is a selection of some graduating seniors who have made a lasting impact on the campus community." 
             data={GlobalData[sections[1]]} 
             _ref={this.seniorProfRef}
           />         
           <Section 
             name={sections[2]} 
-            blurb="Members of Spectator’s graduating class reflect on what they’ve learned and how they’ve grown from their time at the organization." 
+            blurb="Members of Spectator’s graduating class reflect on their experiences at the organization and how they’ve grown during their time here." 
             data={GlobalData[sections[2]]} 
             _ref={this.seniorColRef}
           />

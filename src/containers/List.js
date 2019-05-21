@@ -21,7 +21,8 @@ const Container = styled.a`
 const Contained = styled.div`
     display: flex;
     flex-direction: column;
-    padding: .5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
     @media only screen and (max-height: 650px){
         padding: 0.1rem;
     }
@@ -29,9 +30,9 @@ const Contained = styled.div`
 
 const Name = styled.div`
     font-weight: bold;
-    &>h1{
-        font-size: 1rem;
-        line-height: 1.2rem;
+    &>h2{
+        font-size: 0.75rem;
+        line-height: 0.85rem;
         margin: 0;
         margin-bottom: 0.4rem
     }
@@ -41,7 +42,7 @@ const Desc = styled.div`
     text-transform: capitalize;
     &>h3{
         font-size: 0.5rem;
-        line-height: 1rem;
+        line-height: 0.6rem;
         margin: 0;
     }
 `
@@ -54,7 +55,7 @@ export default class List extends React.Component {
 		return (
             <Container href={id}>
                 <Contained>
-                    <Name><h1>{this.props.list.name}</h1></Name>
+                    <Name><h2>{this.props.list.name}</h2></Name>
                     <Desc><h3>{this.props.list.description}</h3></Desc>
                 </Contained>	
             </Container>
