@@ -22,6 +22,12 @@ const NavbarWrapper = styled.div`
         margin-bottom: -100vh
         background-color: transparent;
     }
+    @media only screen and (min-width: 1500px){
+        &>*{
+            position: relative;
+            left: -1.3vw;
+        }
+    }
 `
 
 const ItemContainer = styled.div`
@@ -52,11 +58,21 @@ const NavItem = styled.div`
     color:grey;
     cursor: pointer;
     transition: border-color 0.2s ease-in;
+    &>h3{
+        font-size: 1rem;
+    }
     @media only screen and (min-width: 992px){
         writing-mode: vertical-rl;
         padding-left: 3.5vmin;
         border-bottom: none;
         border-left: 2.2px solid ${props => props.active ? props.theme.lightGray : "transparent"};
+    }
+    @media only screen and (max-height: 550px){
+        &>h3{
+            font-size: 0.4rem;
+            line-height: 0.7rem;
+            margin-right: -10px;
+        }
     }
 `
 
@@ -74,6 +90,9 @@ const CrownLogo =styled.a`
         width: 4vw;
         top: 10vh;
         left: 3.1vw;
+    }
+    @media only screen and (min-width: 1500px){
+        left: 1.8vw;
     }
 `
 

@@ -16,7 +16,10 @@ const Container = styled.a`
 const Contained = styled.div`
     display: flex;
     flex-direction: column;
-    padding: .5em;
+    padding: .5rem;
+    @media only screen and (max-height: 800px){
+        padding: 0.1rem;
+    }
 `
 
 const Name = styled.div`

@@ -11,6 +11,7 @@ const BigPapa = styled.div`
         max-width: 35vw;
     }
     max-height: 100vh;
+    padding-bottom: 10px;
 `
 const Title = styled.div`
     text-transform: capitalize;
@@ -28,11 +29,11 @@ const Title = styled.div`
 
 const Categories = styled.div`
     display: grid;
-    font-size: 1em;
+    font-size: 1rem;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: column;
     max-width: 100%;
-    @media only screen and (max-height: 550px){
+    @media only screen and (max-height: 800px){
         grid-template-rows: 1fr 1fr;
         overflow: scroll;
     }
@@ -53,7 +54,10 @@ const Button = styled.a`
     :hover{color: ${props => props.theme.darkgray}; text-decoration: none;};
     @media only screen and (max-height: 550px){
         width: 8rem;
-        padding: 0.5rem;
+        padding: 0.3rem;
+        &>h3{
+            1rem;
+        }
     }
 `
 
