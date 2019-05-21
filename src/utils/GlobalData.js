@@ -4,109 +4,109 @@ const GlobalData = {
             title: "Aaron Smithson, CC",
             link: "https://www.columbiaspectator.com/the-eye/2019/05/21/aaron-smithson-cc-19-just-needs-his-space/",
             author: "Sara Bell",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/ZFOYJLSTXRDG7DNHUEAPC2MCOI.jpg"
         },
         {
             title: "Alani Sumako, BC",
             link: "https://www.columbiaspectator.com/the-eye/2019/05/21/alani-sumako-fujii-bc-19-practices-public-service-through-self-care/",
             author: "Candy Chan",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/EJLEWKITNBBHLID6EMP4NHW4KA.jpg"
         },
         {
             title: "Alexandria Parkhurst, CC",
             link: "https://www.columbiaspectator.com/the-eye/2019/05/21/tour-leader-band-leader-business-leader-alex-parkhurst-cc-19-reflects/",
             author: "Mary Marsh",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WMKMDN54EZC3JAUPADXXXMANWA.jpg"
         },
         {
             title: "Caroline Wallis, BC, and Jacquelyn Klein, CC",
             link: "https://www.columbiaspectator.com/arts-and-entertainment/2019/05/21/jacquelyn-klein-cc-19-and-caroline-wallis-bc-19-helped-lay-the-bedrock-of-columbias-visual-arts-landscape/",
             author: "Isabela Espadas Barros Leal",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/3ANS4QO6IRGPZCLVOL6OKW62EM.jpg"
         },
         {
             title: "Elizabeth Ulanova, GS",
             link: "https://www.columbiaspectator.com/the-eye/2019/05/21/elizabeth-ulanova-gs-19-is-where-art-meets-technology-meets-axe-throwing/",
             author: "Julian Shen-Berro",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/27FHCNYI5FGBBIJ3GN6AMZNUUU.jpg"
         },        
         {
             title: "Emily Sun, CC",
             link: "https://www.columbiaspectator.com/news/2019/05/21/from-pre-med-to-medieval-riddles-how-emily-sun-cc-19-found-magic-at-columbia/",
             author: "Valeria Escobar",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/JAZ4AFTTZBBERMLBT7NS6RCHRU.jpg"
         },        
         {
             title: "Jed-Joan Edziah, SEAS",
             link: "https://www.columbiaspectator.com/news/2019/05/21/jed-joan-edziah-seas-19-uncertain-futures-and-assuring-relationships/",
             author: "Valeria Escobar ",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/6JTIETNXFRFH3I3AA4ZFLLTY7Y.jpg"
         },        
         {
             title: "Jennifer Blandon, GS",
             link: "https://www.columbiaspectator.com/news/2019/05/21/jennifer-blandon-gs-19-veteran-philosopher-and-leading-veteran/",
             author: "Emma James",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/UAG4SF7ZAZAWBI5LPCL2RFVF4Q.jpg"
         },  
         {
             title: "Kanoa Mendenhall, CC",
             link: "https://www.columbiaspectator.com/arts-and-entertainment/2019/05/20/kanoa-mendenhall-reflects-on-her-musical-journey-preparing-for-first-international-tour/",
             author: "Fonda Shen",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/IHXQV4HJVBAE7EGUBLXRCUNLPI.jpg"
         },  
         {
             title: "Kiana Mendes, CC",
             link: "https://www.columbiaspectator.com/news/2019/05/21/kiana-mendes-cc-19-connecting-communities-with-compassion/",
             author: "Emma James",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/YITV2V73IVBG3OKDG4IYJXZBNU.jpg"
         },    
         {
             title: "Rachel Greenfeld, BC",
             link: "https://www.columbiaspectator.com/arts-and-entertainment/2019/05/21/varsity-show-celebrity-rachel-greenfeld-bc-19-from-start-to-finish/",
             author: "Samuel Jones",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/3OQAM6NDEZGG3PG474CP7W2FRA.jpg"
         },    
         {
             title: "Robernisha Williams, BC",
             link: "https://www.columbiaspectator.com/news/2019/05/21/robrenisha-williams-bc-19-politicizing-the-neutral-and-educating-for-better-futures/",
             author: "Marianna Najman-Franks",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/4JC2CJ7KKJCKHHP25GZNPNEOTI.jpg"
         },        
         {
             title: "Samuel Castro, SEAS",
             link: "https://www.columbiaspectator.com/news/2019/05/21/samuel-castro-seas-19-fostering-la-familia-3000-miles-from-home/",
             author: "Shubham Saharan ",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/DQO3KARW4ZHJ5P3JESAX2O4KBE.jpg"
         },
         {
             title: "Shaquan Nelson, SEAS",
             link: "https://www.columbiaspectator.com/arts-and-entertainment/2019/05/21/shaquan-nelson-seas-19-on-creating-his-own-clothing-label-and-how-a-turtle-can-climb-a-fence/",
             author: "Sarah Beckley",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/OICOXL47W5EBFJNVCFOE74JYKY.jpg"
         },
         {
             title: "Shreya Sunderram, BC",
             link: "https://www.columbiaspectator.com/news/2019/05/21/shreya-sunderram-bc-19-activism-in-conversation-action-in-the-classroom-and-radical-love-in-practice/",
             author: "Valeria Escobar",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/TSXXOSI4LNFSTIVFY5EU6BIW2Q.jpg"
         },
         {
             title: "Sondra Woodruff, GS",
             link: "https://www.columbiaspectator.com/arts-and-entertainment/2019/05/21/from-the-backstreet-boys-to-butler-sondra-woodruff-gs-19-gained-new-musical-perspectives-through-columbia/",
             author: "Gia Kim",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/RSZJLJUOBFCEVIOMWETOVAPPOU.jpg"
         },
         {
             title: "Valerie Jaharis, BC",
             link: "https://www.columbiaspectator.com/news/2019/05/21/valerie-jaharis-bc-19-interrogating-space-and-pushing-for-unequivocal-equity/",
             author: "Marianna Najman-Franks",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/HBMPLCRAXJDKFCQYUTSXZ3WHUY.jpg"
         },
         {
             title: "Victor Pham, CC",
             link: "https://www.columbiaspectator.com/sports/2019/05/21/victor-pham-cc-19-played-tennis-for-his-family-on-the-court-and-his-family-off-the-court/",
             author: "Elizabeth Karpen",
-            img: "http://via.placeholder.com/150x150/"
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/DMV5UD6K55E5VADNCT4N6J7SME.jpg"
         }
     ],
     "Senior Columns": [
