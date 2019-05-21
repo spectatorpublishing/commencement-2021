@@ -7,7 +7,7 @@ const Wrapper =styled.div`
     background: ${props => props.theme.cream};
     font-family: brandon-grotesque;
     padding-bottom: 8vw;
-    height: 245vh;
+    height: auto;
     @media only screen and (min-width:1200px){
         height: 100%;
     }    
@@ -29,7 +29,7 @@ const Title =styled.div`
 
 const Panel =styled.div`
     width:100%;
-    height:50vh;
+    height:auto;
     display: flex;
     flex-direction:column;
     @media only screen and (min-width:1200px){
