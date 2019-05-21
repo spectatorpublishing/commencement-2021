@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Credits from '../utils/Credits';
-import {MobileAndTablet, Desktop} from 'react-responsive-simple';
+import {MobileAndTablet, LargeDesktop, SmallDesktop} from 'react-responsive-simple';
 
 const Wrapper =styled.div`
     background: ${props => props.theme.cream};
@@ -32,8 +32,10 @@ const Panel =styled.div`
     height:auto;
     display: flex;
     flex-direction:column;
+    overflow:hidden;
+    // background-color: red;
     @media only screen and (min-width:1200px){
-        width:23%;
+        width:24%;
     }
 `;
 
@@ -51,35 +53,43 @@ const Section =styled.div`
     margin-bottom:.5rem;
 `;
 
+const SectionContainer =styled.div`
+    margin-bottom: 1em;
+`;
+
 const Name =styled.div`
     font-size: .9rem;
     color: grey;
     font-weight: bold;
     font-style: italic;
-    white-space: pre;
+    white-space: nowrap;
     font-family: filson-pro;
+    float:left;
     ::after {
-        content: ", ";
+        margin: 0 -1rem 0 0.05rem;
+        content: ",";
         font-style: normal;
     };
+    display: block;
 `;
 
 const Position =styled.div`
     font-size: .8rem;
     color: grey;
-    display: flex;
-    align-items: flex-end;
-    white-space: nowrap;
+    float: left;
+    display: block;
+    margin-left: 1.2rem;
 `;
 
 const Person = styled.div`
-    display:flex;
-    flex-direction:row;
+    display: inline-block;    
 `;
 
-const SectionContainer =styled.div`
-    margin-bottom: 1em;
-`;
+const ContainPerson = styled.div`
+    display: flex;
+`
+
+
 
 
 
@@ -89,10 +99,11 @@ class Division extends React.Component{
         var section = this.props.section;
         if (section != undefined){
             creditsList = Credits[section].map((el,i) =>
-                <Person>
+                <ContainPerson><Person>
                     <Name>{el.name}</Name>
                     <Position>{el.title}</Position>
                 </Person>
+                </ContainPerson>
             );
             return(
                 <SectionContainer>
@@ -120,19 +131,25 @@ export default class Acknowledgements extends React.Component{
         return(
             <Wrapper>
                 <Title>Acknowledgements</Title>
-                <Desktop>
+                <LargeDesktop>
                     <PanelContainer>
                         <Panel>{panel1.map((element,i)=><Division key={i} section= {element}/>)}</Panel>
                         <Panel>{panel2.map((element,i)=><Division key={i+100} section= {element}/>)}</Panel>
                         <Panel>{panel3.map((element,i)=><Division key={i+200} section= {element}/>)}</Panel>
                         <Panel>{panel4.map((element,i)=><Division key={i+300} section= {element}/>)}</Panel>
                     </PanelContainer>
-                </Desktop>
+                </LargeDesktop>
                 <MobileAndTablet>
                     <PanelContainer>
                         <Panel>{panel1.concat(panel2).concat(panel3).concat(panel4).map((element,x)=><Division section= {element}/>)}</Panel>
                     </PanelContainer>
                 </MobileAndTablet>
+                <SmallDesktop>
+                    <PanelContainer>
+                        <Panel>{panel1.concat(panel3).map((element,i)=><Division key={i} section= {element}/>)}</Panel>
+                        <Panel>{panel2.concat(panel4).map((element,i)=><Division key={i} section= {element}/>)}</Panel>
+                    </PanelContainer>
+                </SmallDesktop>
             </Wrapper>
         )
     }
