@@ -63,9 +63,9 @@ const CrownLogo =styled.a`
     background-image: url("https://s3.amazonaws.com/year-in-review-assets/spectator-logo.png?fbclid=IwAR3Li82vFjfxfsNhBbfEkqAAwV3IhXkyT6Ds5HJKos7fS24-ry81K2pJn6g");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 2.6rem;
     width: 10vw;
-    top: .5rem;
+    top: .4rem;
     left: 2vw;
     @media only screen and (min-width: 992px){
         height: 4vw;
