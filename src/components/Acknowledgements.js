@@ -69,6 +69,7 @@ const Position =styled.div`
     color: grey;
     display: flex;
     align-items: flex-end;
+    white-space: nowrap;
 `;
 
 const Person = styled.div`
@@ -111,20 +112,20 @@ export default class Acknowledgements extends React.Component{
 
  
     render(){
-        var panel1 = ["News","A&E","Revenue"];
-        var panel2 = ["The Eye","Product"];
+        var panel1 = ["Corporate Board", "News","Sports","Engagement"];
+        var panel2 = ["A&E","Revenue","Photo"];
         var panel3 = ["Opinion","Copy","Design","Spectrum"];
-        var panel4 = ["Sports","Photo","Engagement"];
+        var panel4 = ["The Eye","Product"];
         
         return(
             <Wrapper>
                 <Title>Acknowledgements</Title>
                 <Desktop>
                     <PanelContainer>
-                        <Panel>{panel1.map((element,x)=><Division section= {element}/>)}</Panel>
-                        <Panel>{panel2.map((element,x)=><Division section= {element}/>)}</Panel>
-                        <Panel>{panel3.map((element,x)=><Division section= {element}/>)}</Panel>
-                        <Panel>{panel4.map((element,x)=><Division section= {element}/>)}</Panel>
+                        <Panel>{panel1.map((element,i)=><Division key={i} section= {element}/>)}</Panel>
+                        <Panel>{panel2.map((element,i)=><Division key={i+100} section= {element}/>)}</Panel>
+                        <Panel>{panel3.map((element,i)=><Division key={i+200} section= {element}/>)}</Panel>
+                        <Panel>{panel4.map((element,i)=><Division key={i+300} section= {element}/>)}</Panel>
                     </PanelContainer>
                 </Desktop>
                 <MobileAndTablet>

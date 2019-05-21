@@ -1,4 +1,18 @@
 const Credits = {
+    "Corporate Board": [
+        {
+            name: "Katherine Gerberich",
+            title: "Editor in Chief"
+        },
+        {
+            name: "Rahil Kamath",
+            title: "Managing Editor"
+        },
+        {
+            name: "Nima Mozhgani",
+            title: "Publisher"
+        },
+    ],
     "News": [
         {
             name: "Karen Xia",
@@ -97,10 +111,6 @@ const Credits = {
         {
             name: "Kevin Li",
             title: "Head of Product"
-        },
-        {
-            name: "Patricia Kusumaningtyas",
-            title: "Associate Copy Editor"
         },
         {
             name: "Cecilia Orduna",
