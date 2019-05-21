@@ -101,8 +101,13 @@ const CommencementHeader=styled.div`
     &>h1 {
         font-size: 6rem;
     }
+    @media only screen and (max-width: 1050px){
+        &>h1 {
+            font-size: 4rem;
+        }
+    }
     @media only screen and (max-width: 992px){
-        padding-bottom: 30vw;
+        padding-bottom: 8rem;
         word-wrap: break-word;
         width:50vw;
         height:20vh;
@@ -111,11 +116,6 @@ const CommencementHeader=styled.div`
         color:white;
         &>h1 {
             font-size: 2.5rem;
-        }
-    }
-    @media only screen and (max-width: 1050px){
-        &>h1 {
-            font-size: 5rem;
         }
     }
 `

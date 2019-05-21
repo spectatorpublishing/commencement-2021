@@ -59,7 +59,7 @@ const NavItem = styled.div`
     cursor: pointer;
     transition: border-color 0.2s ease-in;
     &>h3{
-        font-size: 1rem;
+        font-size: 0.75srem;
     }
     @media only screen and (min-width: 992px){
         writing-mode: vertical-rl;
