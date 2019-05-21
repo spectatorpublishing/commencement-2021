@@ -31,8 +31,9 @@ const Name = styled.div`
     font-weight: bold;
     &>h1{
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 1.2rem;
         margin: 0;
+        margin-bottom: 0.4rem
     }
 `
 
@@ -40,7 +41,7 @@ const Desc = styled.div`
     text-transform: capitalize;
     &>h3{
         font-size: 0.5rem;
-        line-height: 0.5rem;
+        line-height: 1rem;
         margin: 0;
     }
 `
