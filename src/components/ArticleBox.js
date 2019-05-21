@@ -54,6 +54,9 @@ const ArticleInfo = styled.div`
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    &>a>h2{
+        margin-bottom: 0.3rem;
+    }
 `
 
 export default class ArticleBox extends React.Component {
