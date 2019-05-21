@@ -46,6 +46,7 @@ const ArticleImage = styled.div`
         height: 250px;
         overflow: hidden;
         border-radius: 50%;
+        object-fit: cover;
     }
 `
 
