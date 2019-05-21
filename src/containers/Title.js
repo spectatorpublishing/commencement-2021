@@ -8,7 +8,7 @@ const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/T7ZAZKITDRAN7L55GLRV6LU6OQ.jpg");
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/JKC64YAS7BHYRALC5FCZ6HBCT4.jpg");
     background-size: cover;
     background-position: center;
 `
@@ -100,6 +100,8 @@ const CommencementHeader=styled.div`
     text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
     &>h1 {
         font-size: 6rem;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
     }
     @media only screen and (max-width: 1050px){
         &>h1 {
