@@ -10,14 +10,19 @@ const BigPapa = styled.div`
     @media only screen and (min-width: 1200px){
         max-width: 35vw;
     }
+    max-height: 100vh;
 `
 const Title = styled.div`
     text-transform: capitalize;
     font-size: 3.5em;
     font-weight: bold;
-
     &>h1{
         margin: 0;
+    }
+    @media only screen and (max-height: 550px){
+        &>h1{
+            font-size: 3rem;
+        }
     }
 `
 
@@ -25,8 +30,12 @@ const Categories = styled.div`
     display: grid;
     font-size: 1em;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-column: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: column;
+    max-width: 100%;
+    @media only screen and (max-height: 550px){
+        grid-template-rows: 1fr 1fr;
+        overflow: scroll;
+    }
 `
 
 const Button = styled.a`
@@ -37,15 +46,23 @@ const Button = styled.a`
     display: flex; 
     align-content: center;
     justify-content: center; 
-    width: 8em;
+    width: 8rem;
     overflow: hidden;
-    padding: 1em;
+    padding: 1rem;
     text-decoration: none;
     :hover{color: ${props => props.theme.darkgray}; text-decoration: none;};
+    @media only screen and (max-height: 550px){
+        width: 8rem;
+        padding: 0.5rem;
+    }
 `
 
 const Desc = styled.div`
-    font-size: 1.3em;
+    @media only screen and (max-height: 550px){
+        &>h3{
+            font-size: 0.8rem;
+        }
+    }
 `
 export default class Objects extends React.Component {
 	render() {

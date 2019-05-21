@@ -75,9 +75,6 @@ const CrownLogo =styled.a`
         top: 10vh;
         left: 3.1vw;
     }
-    @media only screen and (min-width: 1500px){
-        left: 2vw;
-    }
 `
 
 export default class Navbar extends React.Component {
