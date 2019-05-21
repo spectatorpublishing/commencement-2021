@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
     @import url("https://use.typekit.net/oun7bhh.css");
     h1 {
-        font-family: brandon-grotesque;
+        font-family: brandon-grotesque, sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 4rem;
@@ -12,14 +12,14 @@ export const GlobalStyles = createGlobalStyle`
         text-transform: uppercase;
     }
     h2 {
-        font-family: filson-pro;
+        font-family: filson-pro, sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
     h3 {
-        font-family: brandon-grotesque;
+        font-family: brandon-grotesque, sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: .7rem;
@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
         }
     }
     h4 {
-        font-family: brandon-grotesque;
+        font-family: brandon-grotesque, sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 0.75rem;
