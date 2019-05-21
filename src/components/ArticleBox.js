@@ -15,22 +15,22 @@ const ArticleBoxWrapper = styled.div`
         align-items: unset;
         text-align: left;
         color: ${props => props.theme.cream};
-    }
-    & div:first-of-type{
-        position: relative;
-        left: 0;
-        transition: left 0.3s;
-    }
-    & div:last-of-type{
-        position: relative;
-        right: 0;
-        transition: right 0.3s;
-    }
-    &:hover div:first-of-type{
-        left: 6px;
-    }
-    &:hover div:last-of-type{
-        right: 10px;
+        & div:first-of-type{
+            position: relative;
+            left: 0;
+            transition: left 0.3s;
+        }
+        & div:last-of-type{
+            position: relative;
+            right: 0;
+            transition: right 0.3s;
+        }
+        &:hover div:first-of-type{
+            left: 6px;
+        }
+        &:hover div:last-of-type{
+            right: 10px;
+        }
     }
 `
 
