@@ -7,6 +7,10 @@ const Wrapper =styled.div`
     background: ${props => props.theme.cream};
     font-family: brandon-grotesque;
     padding-bottom: 8vw;
+    height: 245vh;
+    @media only screen and (min-width:1200px){
+        height: 100%;
+    }    
 `;
 
 const Title =styled.div`
