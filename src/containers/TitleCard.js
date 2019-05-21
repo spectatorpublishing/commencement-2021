@@ -5,8 +5,11 @@ import List from './List.js';
 const BigPapa = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 35vw;
+    max-width: 30vw;
     margin-left: 10rem;
+    @media only screen and (min-width: 1200px){
+        max-width: 35vw;
+    }
 `
 const Title = styled.div`
     text-transform: capitalize;
