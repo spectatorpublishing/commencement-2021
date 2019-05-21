@@ -113,6 +113,11 @@ const CommencementHeader=styled.div`
             font-size: 2.5rem;
         }
     }
+    @media only screen and (max-width: 1050px){
+        &>h1 {
+            font-size: 5rem;
+        }
+    }
 `
 
 const Logo = styled.a`
