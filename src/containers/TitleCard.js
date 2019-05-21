@@ -85,7 +85,7 @@ export default class Objects extends React.Component {
                 <br/>
                 <Categories>{lists}</Categories>
                 <br/>
-                <Button href={this.props.info.printLink}><h3>SEE IT IN PRINT</h3></Button>
+                <Button href={this.props.info.printLink} target="_blank"><h3>SEE IT IN PRINT</h3></Button>
             </BigPapa>	
 		)
 	}
