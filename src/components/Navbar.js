@@ -12,7 +12,9 @@ const NavbarWrapper = styled.div`
     height:3.2rem;
     background-color: ${props => props.theme.cream};
     @media only screen and (min-width: 992px){
-        font-size: 30px !important;
+        & h3 {
+            font-size: 1.8vmin;
+        }
         flex-direction: column;
         position: sticky;
         width:10vw;
@@ -51,9 +53,9 @@ const NavItem = styled.div`
     cursor: pointer;
     @media only screen and (min-width: 992px){
         writing-mode: vertical-rl;
-        padding-left: 1vw;
+        padding-left: 3.5vmin;
         border-bottom: none;
-        border-left: 3px solid ${props => props.active ? props.theme.lightGray : "transparent"};
+        border-left: 2.2px solid ${props => props.active ? props.theme.lightGray : "transparent"};
     }
 `
 
