@@ -35,7 +35,8 @@ const Categories = styled.div`
     max-width: 100%;
     @media only screen and (max-height: 650px){
         grid-template-rows: 1fr 1fr;
-        overflow: scroll;
+        overflow-y: hidden;
+        overflow-x: scroll;
     }
 `
 

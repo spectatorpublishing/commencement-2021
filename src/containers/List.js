@@ -3,13 +3,18 @@ import styled from 'styled-components';
 
 const Container = styled.a` 
     transition: 0.2s;
-    transform-origin: 1cm center;
+    transform-origin: center;
     &:hover{
         text-decoration: none;
-        transform: scale(1.15);
     }
     &:visited{
         text-decoration: none;
+    }
+    @media only screen and (min-height: 651px){
+        &:hover{
+            text-decoration: none;
+            transform: scale(1.15);
+        }
     }
 `
 
