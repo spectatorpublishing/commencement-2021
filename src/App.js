@@ -6,6 +6,7 @@ import GlobalData from './utils/GlobalData'
 import Navbar from './components/Navbar'
 import Title from './containers/Title'
 import Section from './containers/Section'
+import Acknowledgements from './components/Acknowledgements'
 
 const sections = ["Class Days", "Senior Profiles", "Senior Columns"]
 
@@ -95,7 +96,8 @@ class App extends React.PureComponent {
             data={GlobalData[sections[2]]} 
             _ref={this.seniorColRef}
           />
-          </React.Fragment>
+          <Acknowledgements/>
+        </React.Fragment>
       </ThemeProvider>
     );
   }
