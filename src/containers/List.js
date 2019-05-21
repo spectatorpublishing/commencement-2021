@@ -13,7 +13,7 @@ const Container = styled.a`
     @media only screen and (min-height: 651px){
         &:hover{
             text-decoration: none;
-            transform: scale(1.15);
+            transform: scale(1.05);
         }
     }
 `
