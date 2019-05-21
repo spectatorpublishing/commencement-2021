@@ -67,11 +67,11 @@ const NavItem = styled.div`
         border-bottom: none;
         border-left: 2.2px solid ${props => props.active ? props.theme.lightGray : "transparent"};
     }
-    @media only screen and (max-height: 550px){
+    @media only screen and (max-height: 650px){
         &>h3{
-            font-size: 0.4rem;
+            font-size: 0.75rem;
             line-height: 0.7rem;
-            margin-right: -10px;
+            margin-right: -8px;
         }
     }
 `

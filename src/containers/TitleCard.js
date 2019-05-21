@@ -20,7 +20,7 @@ const Title = styled.div`
     &>h1{
         margin: 0;
     }
-    @media only screen and (max-height: 550px){
+    @media only screen and (max-height: 650px){
         &>h1{
             font-size: 3rem;
         }
@@ -33,7 +33,7 @@ const Categories = styled.div`
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: column;
     max-width: 100%;
-    @media only screen and (max-height: 800px){
+    @media only screen and (max-height: 650px){
         grid-template-rows: 1fr 1fr;
         overflow: scroll;
     }
@@ -52,7 +52,7 @@ const Button = styled.a`
     padding: 1rem;
     text-decoration: none;
     :hover{color: ${props => props.theme.darkgray}; text-decoration: none;};
-    @media only screen and (max-height: 550px){
+    @media only screen and (max-height: 650px){
         width: 8rem;
         padding: 0.3rem;
         &>h3{
@@ -62,7 +62,7 @@ const Button = styled.a`
 `
 
 const Desc = styled.div`
-    @media only screen and (max-height: 550px){
+    @media only screen and (max-height: 650px){
         &>h3{
             font-size: 0.8rem;
         }

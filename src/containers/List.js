@@ -17,7 +17,7 @@ const Contained = styled.div`
     display: flex;
     flex-direction: column;
     padding: .5rem;
-    @media only screen and (max-height: 800px){
+    @media only screen and (max-height: 650px){
         padding: 0.1rem;
     }
 `
