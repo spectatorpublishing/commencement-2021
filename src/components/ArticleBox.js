@@ -46,6 +46,7 @@ const ArticleImage = styled.div`
         height: 250px;
         overflow: hidden;
         border-radius: 50%;
+        object-fit: cover;
     }
 `
 
@@ -54,6 +55,9 @@ const ArticleInfo = styled.div`
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    @media only screen and (min-width: 1200px){
+        width: 70%;
+    }
     &>a>h2{
         margin-bottom: 0.3rem;
     }

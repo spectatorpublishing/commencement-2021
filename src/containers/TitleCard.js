@@ -53,15 +53,12 @@ const Button = styled.a`
     justify-content: center; 
     width: 8rem;
     overflow: hidden;
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration: none;
     :hover{color: ${props => props.theme.darkgray}; text-decoration: none;};
     @media only screen and (max-height: 650px){
         width: 8rem;
         padding: 0.3rem;
-        &>h3{
-            1rem;
-        }
     }
 `
 
