@@ -54,6 +54,9 @@ const ArticleInfo = styled.div`
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    @media only screen and (min-width: 1200px){
+        width: 70%;
+    }
     &>a>h2{
         margin-bottom: 0.3rem;
     }
