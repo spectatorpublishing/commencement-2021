@@ -180,7 +180,7 @@ const Credits = {
         },
         {
             name: "Caroline Chen",
-            title: "Spectrum Deputy"
+            title: "Deputy Spectrum Deputy"
         },
     ],
     "Sports": [
