@@ -153,7 +153,7 @@ const GlobalData = {
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/UL37ZLGRA5B7NONOXYX3MHVQ2Y.jpg"
         },
         {
-            title: "Communites of Care",
+            title: "Communites of care",
             link: "https://www.columbiaspectator.com/opinion/2019/05/20/communities-of-care/",
             author: "Parth Chhabra",
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/KZ52ATI54ZHETOK6J3VLNPZY2I.jpg"

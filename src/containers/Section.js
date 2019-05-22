@@ -69,7 +69,6 @@ const HeaderMobileBlurb = styled.div`
     color: ${props => props.theme.darkgray};
     &>h3{
         font-size: 1.5rem;
-        text-transform: none;
         font-weight: 600;
     }
 `
