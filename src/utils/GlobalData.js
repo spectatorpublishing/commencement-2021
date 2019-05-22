@@ -7,13 +7,13 @@ const GlobalData = {
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/ZFOYJLSTXRDG7DNHUEAPC2MCOI.jpg"
         },
         {
-            title: "Alani Sumako, BC",
+            title: "Alani Sumako Fujii, BC",
             link: "https://www.columbiaspectator.com/the-eye/2019/05/21/alani-sumako-fujii-bc-19-practices-public-service-through-self-care/",
             author: "Candy Chan",
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/EJLEWKITNBBHLID6EMP4NHW4KA.jpg"
         },
         {
-            title: "Alexandria Parkhurst, CC",
+            title: "Alex Parkhurst, CC",
             link: "https://www.columbiaspectator.com/the-eye/2019/05/21/tour-leader-band-leader-business-leader-alex-parkhurst-cc-19-reflects/",
             author: "Mary Marsh",
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/WMKMDN54EZC3JAUPADXXXMANWA.jpg"
@@ -43,7 +43,7 @@ const GlobalData = {
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/6JTIETNXFRFH3I3AA4ZFLLTY7Y.jpg"
         },        
         {
-            title: "Jennifer Blandon, GS",
+            title: "Jennifer Blandón, GS",
             link: "https://www.columbiaspectator.com/news/2019/05/21/jennifer-blandon-gs-19-veteran-philosopher-and-leading-veteran/",
             author: "Emma James",
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/UAG4SF7ZAZAWBI5LPCL2RFVF4Q.jpg"
@@ -67,7 +67,7 @@ const GlobalData = {
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/3OQAM6NDEZGG3PG474CP7W2FRA.jpg"
         },    
         {
-            title: "Robernisha Williams, BC",
+            title: "Robrenisha Williams, BC",
             link: "https://www.columbiaspectator.com/news/2019/05/21/robrenisha-williams-bc-19-politicizing-the-neutral-and-educating-for-better-futures/",
             author: "Marianna Najman-Franks",
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/4JC2CJ7KKJCKHHP25GZNPNEOTI.jpg"
@@ -125,7 +125,7 @@ const GlobalData = {
         {
             title: "They don't really care about us",
             link: "https://www.columbiaspectator.com/opinion/2019/05/21/they-dont-really-care-about-us/",
-            author: "Alex McNab",
+            author: "Alexander McNab",
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/5M3EMMSYG5BFTEXBQBHEXZTK3E.jpg"
         },
         {

@@ -55,6 +55,10 @@ const Credits = {
     ],
     "Revenue": [
         {
+            name: "Noel Martinez",
+            title: "Revenue Director"
+        },
+        {
             name: "Maria Avila-Franklin",
             title: "Revenue Project Manager"
         },
@@ -129,6 +133,10 @@ const Credits = {
             title: "Product Designer"
         },
         {
+            name: "Arsalaan Ansari",
+            title: "Head of Engineering"
+        },
+        {
             name: "Rounak Bera",
             title: "Engineering Manager"
         },
@@ -180,13 +188,13 @@ const Credits = {
         },
         {
             name: "Caroline Chen",
-            title: "Spectrum Deputy"
+            title: "Deputy Spectrum Editor"
         },
     ],
     "Sports": [
         {
             name: "Elizabeth Karpen",
-            title: "Sports Staff Writer"
+            title: "Staff Writer"
         },
     ],
     "Photo": [

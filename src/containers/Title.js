@@ -90,7 +90,7 @@ const SectionContainer=styled.div`
 `
 const CommencementHeader=styled.div`
     display:flex;
-    height:80vh;
+    height:78vh;
     width:100vw;
     justify-content:space-around;
     align-items:center;
