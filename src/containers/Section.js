@@ -105,7 +105,7 @@ export default class Section extends React.Component {
             titleDesc: this.props.blurb,
             cols: this.props.cols,
             list: list,
-            printLink: "http://www.google.com"
+            printLink: "https://s3.amazonaws.com/cds-static-hosting/Commencement+2019+official.pdf"
             }
         ]
         const TitleCards = info.map(info => <TitleCard info = {info}/>)
