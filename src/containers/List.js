@@ -49,9 +49,8 @@ const Desc = styled.div`
 
 function animateId(id){
     let d = document.getElementById(id.replace("#", ""));
-    let beforeClasses = d.className
     d.className += " animate";
-    setTimeout(()=>{d.className = beforeClasses}, 1000)
+    setTimeout(()=>{d.className = d.className.replace(" animate", "")}, 1000)
 }
 
 export default class List extends React.Component {
