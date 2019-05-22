@@ -113,12 +113,16 @@ const Credits = {
             title: "Head of Product"
         },
         {
-            name: "Cecilia Orduna",
+            name: "Cecilia Orduña",
             title: "Lead Product Designer"
         },
         {
+            name: "Shannon Hui",
+            title: "Product Manager"
+        },
+        {
             name: "Cindy Espinosa",
-            title: "Product Designer"
+            title: "Product Manager"
         },
         {
             name: "Mirah Shi",

@@ -81,19 +81,22 @@ class App extends React.PureComponent {
           <Section 
             name={sections[0]} 
             blurb="Read what this year's keynote speakers had to say to graduating Columbia College, School of Engineering and Applied Science, General Studies, and Barnard students." 
-            data={GlobalData[sections[0]]} 
+            data={GlobalData[sections[0]]}
+            cols={4}
             _ref={this.classDaysRef}
           />
           <Section 
             name={sections[1]} 
             blurb="The class of 2019 has produced incredible leaders, activists, artists, athletes, and more. Here is a selection of some graduating seniors who have made a lasting impact on the campus community." 
             data={GlobalData[sections[1]]} 
+            cols={4}
             _ref={this.seniorProfRef}
           />         
           <Section 
             name={sections[2]} 
             blurb="Members of Spectator’s graduating class reflect on their experiences at the organization and how they’ve grown during their time here." 
             data={GlobalData[sections[2]]} 
+            col={3}
             _ref={this.seniorColRef}
           />
           <Acknowledgements/>

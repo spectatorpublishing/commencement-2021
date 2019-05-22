@@ -2,18 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.a` 
-    transition: 0.2s;
-    transform-origin: center;
     &:hover{
         text-decoration: none;
     }
     &:visited{
         text-decoration: none;
     }
+    transition: 0.2s;
+    transform-origin: center;
     @media only screen and (min-height: 651px){
         &:hover{
             text-decoration: none;
-            transform: scale(1.15);
+            transform: scale(1.05);
         }
     }
 `

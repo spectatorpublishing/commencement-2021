@@ -31,7 +31,7 @@ const Categories = styled.div`
     display: grid;
     font-size: 1rem;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 25%;
+    grid-auto-columns: ${props => String(100 / props.cols)}%;
     grid-auto-flow: column;
     max-width: 100%;
     max-height: 50vh;
@@ -69,7 +69,7 @@ const Desc = styled.div`
         }
     }
 `
-export default class Objects extends React.Component {
+export default class TitleCard extends React.Component {
 	render() {
         const table = this.props.info.list;
         var lists;
@@ -83,7 +83,7 @@ export default class Objects extends React.Component {
                 <br/>
                 <Desc><h3>{this.props.info.titleDesc}</h3></Desc>
                 <br/>
-                <Categories>{lists}</Categories>
+                <Categories cols={this.props.info.cols}>{lists}</Categories>
                 <br/>
                 <Button href={this.props.info.printLink} target="_blank"><h3>SEE IT IN PRINT</h3></Button>
             </BigPapa>	

@@ -101,6 +101,7 @@ export default class Section extends React.Component {
         const info = [
             {title: this.props.name,
             titleDesc: this.props.blurb,
+            cols: this.props.cols,
             list: list,
             printLink: "http://www.google.com"
             }
