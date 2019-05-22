@@ -123,70 +123,10 @@ const GlobalData = {
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/2WY34VK4UBEIBJEGO26KFRHXW4.jpg"
         },
         {
-            title: "Letting it matter",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/20/letting-it-matter/",
-            author: "Catherine Hoang",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/O6A3P66E3FAEVNG3XYFD7FZY5I.jpg"
-        },
-        {
-            title: "I never meant to fall in love with Spec",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/20/i-never-meant-to-fall-in-love-with-spec/",
-            author: "Sarah Fornshell",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/2PPBK3XRWVB6DA25RAQ3UPV46A.jpg"
-        },
-        {
-            title: "Self-care according to a spec mom",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/20/self-care-according-to-a-spec-mom/",
-            author: "Laura Salgado",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/5IQA45NXTRDIJCZDDUP3LANKQE.jpg"
-        },
-        {
-            title: "Oui Papa, I’m in the library",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/20/oui-papa-im-in-the-library/",
-            author: "Yasmine Akki",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/X6VHVWPHQ5ASDBFE5ZICBX2BWY.jpg"
-        },
-        {
-            title: "Why I wrote ",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/21/why-i-wrote/",
-            author: "Chris Lopez",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/UL37ZLGRA5B7NONOXYX3MHVQ2Y.jpg"
-        },
-        {
-            title: "Communites of care",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/20/communities-of-care/",
-            author: "Parth Chhabra",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/KZ52ATI54ZHETOK6J3VLNPZY2I.jpg"
-        },
-        {
-            title: "The other side of the glass ceiling",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/21/the-other-side-of-the-glass-ceiling/",
-            author: "JJ Spitz",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/YWIJVIMYOFAGXPIZUI2J6CZ33U.jpg"
-        },
-        {
-            title: "Being a good editor, on and off the page",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/20/being-a-good-editor-on-and-off-the-page/",
-            author: "Hannah Barbosa Cesnik",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/2FFYP5H5TZBXBCVHDUC3HBXO6Y.jpg"
-        },
-        {
-            title: "It's just a newspaper",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/21/its-just-a-newspaper/",
-            author: "Sophie Kossakowski",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/ID6VXS67ENHN5MSPIPLNCEENFQ.jpg"
-        },
-        {
-            title: "Fear is a palpable thing",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/20/fear-is-a-palpable-thing/",
-            author: "Charlotte Pu",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/VMAWNAWZWNA5RLZD4MCEAEQASE.jpg"
-        },
-        {
-            title: "A crash course",
-            link: "https://www.columbiaspectator.com/photo-essay/2019/05/21/a-crash-course/",
-            author: "Elza Bouhassira",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/X444KW4TAVGJHAPIKPLGU2CUGY.jpg"
+            title: "They don't really care about us",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/21/they-dont-really-care-about-us/",
+            author: "Alexander McNab",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/5M3EMMSYG5BFTEXBQBHEXZTK3E.jpg"
         },
         {
             title: "Hydration and history",
@@ -195,10 +135,70 @@ const GlobalData = {
             img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/7RSAH6ZCDNFRBAQIAPQ335YLB4.jpg"
         },
         {
-            title: "They don't really care about us",
-            link: "https://www.columbiaspectator.com/opinion/2019/05/21/they-dont-really-care-about-us/",
-            author: "Alexander McNab",
-            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/5M3EMMSYG5BFTEXBQBHEXZTK3E.jpg"
+            title: "Letting it matter",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/20/letting-it-matter/",
+            author: "Catherine Hoang",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/O6A3P66E3FAEVNG3XYFD7FZY5I.jpg"
+        },
+        {
+            title: "Fear is a palpable thing",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/20/fear-is-a-palpable-thing/",
+            author: "Charlotte Pu",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/VMAWNAWZWNA5RLZD4MCEAEQASE.jpg"
+        },
+        {
+            title: "Why I wrote ",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/21/why-i-wrote/",
+            author: "Chris Lopez",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/UL37ZLGRA5B7NONOXYX3MHVQ2Y.jpg"
+        },
+        {
+            title: "A crash course",
+            link: "https://www.columbiaspectator.com/photo-essay/2019/05/21/a-crash-course/",
+            author: "Elza Bouhassira",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/X444KW4TAVGJHAPIKPLGU2CUGY.jpg"
+        },
+        {
+            title: "Being a good editor, on and off the page",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/20/being-a-good-editor-on-and-off-the-page/",
+            author: "Hannah Barbosa Cesnik",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/2FFYP5H5TZBXBCVHDUC3HBXO6Y.jpg"
+        },
+        {
+            title: "The other side of the glass ceiling",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/21/the-other-side-of-the-glass-ceiling/",
+            author: "JJ Spitz",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/YWIJVIMYOFAGXPIZUI2J6CZ33U.jpg"
+        },
+        {
+            title: "Self-care according to a spec mom",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/20/self-care-according-to-a-spec-mom/",
+            author: "Laura Salgado",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/5IQA45NXTRDIJCZDDUP3LANKQE.jpg"
+        },
+        {
+            title: "Communites of care",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/20/communities-of-care/",
+            author: "Parth Chhabra",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/KZ52ATI54ZHETOK6J3VLNPZY2I.jpg"
+        },
+        {
+            title: "I never meant to fall in love with Spec",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/20/i-never-meant-to-fall-in-love-with-spec/",
+            author: "Sarah Fornshell",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/2PPBK3XRWVB6DA25RAQ3UPV46A.jpg"
+        },
+        {
+            title: "It's just a newspaper",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/21/its-just-a-newspaper/",
+            author: "Sophie Kossakowski",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/ID6VXS67ENHN5MSPIPLNCEENFQ.jpg"
+        },
+        {
+            title: "Oui Papa, I’m in the library",
+            link: "https://www.columbiaspectator.com/opinion/2019/05/20/oui-papa-im-in-the-library/",
+            author: "Yasmine Akki",
+            img: "https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/X6VHVWPHQ5ASDBFE5ZICBX2BWY.jpg"
         }
     ],
     "Class Days": [
