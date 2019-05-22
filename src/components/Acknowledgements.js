@@ -8,6 +8,8 @@ const Wrapper =styled.div`
     font-family: brandon-grotesque;
     padding-bottom: 8vw;
     height: auto;
+    background: ${props => props.theme.babyBlue};
+    color: ${props => props.theme.white};
     @media only screen and (min-width:1200px){
         height: 100%;
     }    
@@ -17,7 +19,6 @@ const Title =styled.div`
     text-transform: uppercase;
     font-size: 1.6em;
     margin-left: 10vw;
-    color: grey;
     font-weight:900;
     margin-bottom:.7em;
     padding-top:2em;
@@ -48,7 +49,6 @@ const PanelContainer =styled.div`
 
 const Section =styled.div`
     font-size: 1.13rem;
-    color: grey;
     text-transform:uppercase;
     margin-bottom:.5rem;
 `;
@@ -59,7 +59,6 @@ const SectionContainer =styled.div`
 
 const Name =styled.div`
     font-size: .9rem;
-    color: grey;
     font-weight: bold;
     font-style: italic;
     white-space: nowrap;
@@ -75,7 +74,6 @@ const Name =styled.div`
 
 const Position =styled.div`
     font-size: .8rem;
-    color: grey;
     float: left;
     display: block;
     margin-left: 1.2rem;
