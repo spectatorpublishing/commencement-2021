@@ -80,7 +80,7 @@ class App extends React.PureComponent {
           <Navbar active={this.state.navActive} sections={sections} navigateTo={this.navigateTo}/>
           <Section 
             name={sections[0]} 
-            blurb="Read what this year's keynote speakers had to say to graduating Columbia College, School of Engineering and Applied Science, General Studies, and Barnard students." 
+            blurb="Read what keynote speakers had to say to graduating Columbia College, School of Engineering and Applied Science, General Studies, and Barnard students." 
             data={GlobalData[sections[0]]}
             cols={4}
             _ref={this.classDaysRef}

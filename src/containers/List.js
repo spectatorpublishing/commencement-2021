@@ -47,13 +47,20 @@ const Desc = styled.div`
     }
 `
 
+function animateId(id){
+    let d = document.getElementById(id.replace("#", ""));
+    let beforeClasses = d.className
+    d.className += " animate";
+    setTimeout(()=>{d.className = beforeClasses}, 1000)
+}
+
 export default class List extends React.Component {
 	render() {
         var newID = this.props.list.name;
         var id = newID.replace(/ /g, "-");
         id = "#" + id;
 		return (
-            <Container href={id}>
+            <Container href={id} onClick={()=>{animateId(id)}}>
                 <Contained>
                     <Name><h2>{this.props.list.name}</h2></Name>
                     <Desc><h3>{this.props.list.description}</h3></Desc>

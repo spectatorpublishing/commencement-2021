@@ -1,5 +1,11 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const blowUp = keyframes`
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+`
 
 const ArticleBoxWrapper = styled.div`
     width: 100%;
@@ -31,6 +37,10 @@ const ArticleBoxWrapper = styled.div`
         &:hover div:last-of-type{
             right: 10px;
         }
+    }
+    &.animate {
+        transform-origin: center;
+        animation: 1s ${blowUp} infinite;
     }
 `
 

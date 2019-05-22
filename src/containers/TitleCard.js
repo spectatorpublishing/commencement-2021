@@ -43,7 +43,7 @@ const Categories = styled.div`
     }
 `
 
-const Button = styled.a`
+export const Button = styled.a`
     background-color: ${props => props.theme.lightgray};
     border-radius: 25px;
     text-transform: capitalize;

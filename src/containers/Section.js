@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import TitleCard from './TitleCard.js';
+import TitleCard, {Button} from './TitleCard.js';
 import {MobileAndTablet, Desktop} from 'react-responsive-simple'
 import ArticleBox from '../components/ArticleBox.js'
 
@@ -47,6 +47,9 @@ const HeaderWrapperMobile = styled.div`
     height; 8rem;
     display: block;  
     margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 const HeaderMobileTitle = styled.div`
@@ -68,7 +71,7 @@ const HeaderMobileBlurb = styled.div`
     background: ${props => props.theme.cream};
     color: ${props => props.theme.darkgray};
     &>h3{
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 600;
     }
 `
@@ -120,6 +123,7 @@ export default class Section extends React.Component {
                                 <HeaderMobileBlurb>
                                     <h3>{this.props.blurb}</h3>
                                 </HeaderMobileBlurb>
+                                <Button href={info.printLink} target="_blank"><h3>SEE IT IN PRINT</h3></Button>
                             </HeaderWrapperMobile>
                         </MobileAndTablet>
                         {Articles}
