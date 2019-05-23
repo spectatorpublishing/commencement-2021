@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import TitleCard, {Button} from './TitleCard.js';
-import {MobileAndTablet, Desktop} from 'react-responsive-simple'
+import { MobileAndTablet } from 'react-responsive-simple'
 import ArticleBox from '../components/ArticleBox.js'
 
 const SectionWrapper = styled.div`
@@ -24,21 +24,6 @@ const HeaderWrapper = styled.div`
     }
     @media only screen and (min-width: 1200px){
         width: 80%;
-    }
-`
-
-const Header = styled.div`
-    max-width: 35vw;
-    margin-left: 10rem;
-    &>h1 {
-        margin-bottom: 1rem;
-    }
-`
-
-const HeaderBlurb = styled.div`
-    width: 80%;
-    @media only screen and (min-width: 1200px){
-        width: 90%;
     }
 `
 
@@ -123,7 +108,7 @@ export default class Section extends React.Component {
                                 <HeaderMobileBlurb>
                                     <h3>{this.props.blurb}</h3>
                                 </HeaderMobileBlurb>
-                                <Button href={info.printLink} target="_blank"><h3>SEE IT IN PRINT</h3></Button>
+                                <Button href={info[0].printLink} target="_blank"><h3>SEE IT IN PRINT</h3></Button>
                             </HeaderWrapperMobile>
                         </MobileAndTablet>
                         {Articles}

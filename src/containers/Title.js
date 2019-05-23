@@ -13,35 +13,6 @@ const TitleWrapper = styled.div`
     background-position: center;
 `
 
-const ClassDaysNum = styled.div`
-    visibility:hidden;
-    @media only screen and (max-width: 992px){
-        visibility:visible;
-        padding-left:15vw;
-        width:35vw;
-        font-size:2rem;
-    }
-`
-const ClassDaysBody = styled.div`
-    visibility:hidden;
-    @media only screen and (max-width: 992px){
-        visibility:visible;
-        width:65vw;
-        height:15vh;
-    }
-`
-
-const ClassDaysContainer = styled.div`
-    visibility:hidden;
-    @media only screen and (max-width: 992px){
-        visibility:visible;
-        display:flex;
-        flex-direction:inline-row;
-        justify-content:space-around;
-        background:white;
-    }
-`
-
 const TitleButton = styled.div`
     text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
     color: ${props => props.theme.white};
