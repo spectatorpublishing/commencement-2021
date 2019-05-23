@@ -95,7 +95,7 @@ class Division extends React.Component{
     render(){
         var creditsList =[];
         var section = this.props.section;
-        if (section != undefined){
+        if (section !== undefined){
             creditsList = Credits[section].map((el,i) =>
                 <ContainPerson><Person>
                     <Name>{el.name}</Name>
