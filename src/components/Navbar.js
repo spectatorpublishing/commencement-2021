@@ -59,7 +59,7 @@ const NavItem = styled.div`
 
 const CrownLogo =styled.a`
     position: relative;
-    background-image: url("https://s3.amazonaws.com/year-in-review-assets/spectator-logo.png?fbclid=IwAR3Li82vFjfxfsNhBbfEkqAAwV3IhXkyT6Ds5HJKos7fS24-ry81K2pJn6g");
+    background-image: url("https://s3.amazonaws.com/year-in-review-assets/spectator-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;

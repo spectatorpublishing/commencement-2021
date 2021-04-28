@@ -14,7 +14,8 @@ const ArticleBoxWrapper = styled.div`
         justify-content: space-between;
         align-items: unset;
         text-align: left;
-        color: ${props => props.theme.cream};
+        color: ${props => props.theme.darkgray};
+        /* color: ${props => props.theme.cream}; */
     }
     & div:first-of-type{
         position: relative;
@@ -45,7 +46,7 @@ const ArticleImage = styled.div`
         width: 250px;
         height: 250px;
         overflow: hidden;
-        border-radius: 50%;
+        /* border-radius: 50%; */
     }
 `
 

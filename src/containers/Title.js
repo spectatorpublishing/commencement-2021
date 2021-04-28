@@ -6,51 +6,23 @@ const TitleWrapper = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/T7ZAZKITDRAN7L55GLRV6LU6OQ.jpg");
+    justify-content: space-between;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3PZKZG7DNNDNXAOW47MFLTRJFE.jpg");
     background-size: cover;
     background-position: center;
-`
+`;
 
-const ClassDaysNum = styled.div`
-    visibility:hidden;
-    @media only screen and (max-width: 992px){
-        visibility:visible;
-        padding-left:15vw;
-        width:35vw;
-        font-size:2rem;
-    }
-`
-const ClassDaysBody = styled.div`
-    visibility:hidden;
-    @media only screen and (max-width: 992px){
-        visibility:visible;
-        width:65vw;
-        height:15vh;
-    }
-`
-
-const ClassDaysContainer = styled.div`
-    visibility:hidden;
-    @media only screen and (max-width: 992px){
-        visibility:visible;
-        display:flex;
-        flex-direction:inline-row;
-        justify-content:space-around;
-        background:white;
-    }
-`
-
-const TitleButton = styled.div`
+const TitleButton = styled.a`
     text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
     color: ${props => props.theme.white};
     text-transform: uppercase;
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    margin: 1rem 0;
     &>h2{
         margin: 0;
+        font-size: 2rem;
     }
     &>div{
         border-bottom: 4px solid ${props => props.theme.white};
@@ -66,80 +38,80 @@ const TitleButton = styled.div`
             display: none;
         }
     }
+
+    :hover {
+        text-decoration: none;
+    }
 `
 
 const SectionContainer=styled.div`
-    display:flex;
-    flex-direction:row;
-    width:80vw;
-    justify-content:space-between;
-    @media only screen and (max-width: 992px){
-        display:flex;
-        flex-direction:column;
-        justify-conent:space-around;
-        width:60vw;
-        height:40vh;
-        overflow:hidden;
-        text-align:center;
-        text-decoration: underline;
-        color:white;
-        font-size:1.5rem;
-        font-weight:800;
-        padding-bottom:20vh;
+    box-sizing: border-box;
+    background: rgba(0, 51, 160, 0.5);
+    height: 100%;
+    left: 0;
+    padding: 0 3rem;
+    padding-top: 3rem;
+    width: 30%;
+
+    @media only screen and (max-width: 500px){
+        display: none;
     }
-`
+`;
+
 const CommencementHeader=styled.div`
-    display:flex;
-    height:80vh;
-    width:100vw;
-    justify-content:space-around;
-    align-items:center;
     color:white;
-    padding-bottom: 0vw;
     text-transform: uppercase;
-    text-shadow: 1px 1px 10px rgba(0,0,0,0.75);
+    margin-top: 5rem;
+    margin-right: 1rem;
+    font-family: brandon-grotesque;
     &>h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
-    @media only screen and (max-width: 992px){
-        padding-bottom: 30vw;
+    @media only screen and (max-width: 1024px){
         word-wrap: break-word;
-        width:50vw;
-        height:20vh;
-        padding-top:20vh;
-        text-align:center;
         color:white;
+
         &>h1 {
             font-size: 2.5rem;
         }
     }
+
+    @media only screen and (max-width: 500px){
+        margin: 3rem 3rem;
+        text-align: center;
+    }
 `
 
-const Logo = styled.a`
+const Logo = styled.img`
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 20px;
-    width: 200px;
-    height: 50px;
-    background-image:  url('https://s3.amazonaws.com/year-in-review-assets/whitemasthead.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 15rem;
+
+    @media only screen and (max-width: 500px){
+        margin: 1rem;
+        top: inherit;
+        right: inherit;
+    }
 `
 
 export default class Title extends React.Component {
     
     render(){
+        //onClick={()=>{this.props.navigateTo(i)}} 
         const SectionButtons = this.props.sections.map((el, i)=>(
-            <TitleButton onClick={()=>{this.props.navigateTo(i)}} key={i}><h2>{el}</h2><div/></TitleButton>
+            <TitleButton href={`/#${el === "A&E" ? "Arts and Entertainment" : el}`} key={i}><h2>{el}</h2><div/></TitleButton> 
         ))
         return(
             <TitleWrapper>
-                <Logo href="https://www.columbiaspectator.com/"/>
-                <CommencementHeader><h1>Commencement 2019</h1></CommencementHeader>
                 <SectionContainer>
-                {SectionButtons}
+                    {SectionButtons}
                 </SectionContainer>
+                <a href="https://www.columbiaspectator.com/">
+                    <Logo src="https://s3.amazonaws.com/year-in-review-assets/whitemasthead.png" />
+                </a>
+                {/* <Logo href="https://www.columbiaspectator.com/"/> */}
+                <CommencementHeader><h1>Commencement 2021</h1></CommencementHeader>
             </TitleWrapper>
         )
     }

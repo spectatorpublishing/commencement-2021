@@ -94,6 +94,120 @@ const GlobalData = {
             author: "DJ Thonk",
             img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
         }
+    ],
+    "News": [
+        {
+            title: "Ya yeet 11",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 12",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 13",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 14",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 15",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 15",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        }
+    ],
+    "Sports": [
+        {
+            title: "Ya yeet 11",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 12",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 13",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 14",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 15",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 15",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        }
+    ],
+    "Arts and Entertainment": [
+        {
+            title: "Ya yeet 11",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 12",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 13",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 14",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 15",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        },
+        {
+            title: "Ya yeet 15",
+            link: "https://www.reddit.com",
+            author: "DJ Thonk",
+            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+        }
     ]
 }
 export default GlobalData;

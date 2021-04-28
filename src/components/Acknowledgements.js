@@ -4,9 +4,9 @@ import Credits from '../utils/Credits';
 import {MobileAndTablet, Desktop} from 'react-responsive-simple';
 
 const Wrapper =styled.div`
-    background: ${props => props.theme.cream};
+    background: ${props => props.theme.babyBlue};
     font-family: brandon-grotesque;
-    padding-bottom: 8vw;
+    padding: 4rem 2rem;
     height: auto;
     @media only screen and (min-width:1200px){
         height: 100%;
@@ -16,11 +16,9 @@ const Wrapper =styled.div`
 const Title =styled.div`
     text-transform: uppercase;
     font-size: 1.6em;
-    margin-left: 10vw;
-    color: grey;
+    color: white;
     font-weight:900;
-    margin-bottom:.7em;
-    padding-top:2em;
+    margin-bottom: 2rem;
     @media only screen and (min-width:1200px){
         font-size: 2.8em;
     }
@@ -40,20 +38,20 @@ const Panel =styled.div`
 const PanelContainer =styled.div`
     display:flex;
     width:90%;
-    padding-left:10%;
+    padding-left: 2rem;
     justify-content: space-between;
 `;
 
 const Section =styled.div`
     font-size: 1.13rem;
-    color: grey;
+    color: white;
     text-transform:uppercase;
     margin-bottom:.5rem;
 `;
 
 const Name =styled.div`
     font-size: .9rem;
-    color: grey;
+    color: white;
     font-weight: bold;
     font-style: italic;
     white-space: pre;
@@ -66,7 +64,7 @@ const Name =styled.div`
 
 const Position =styled.div`
     font-size: .8rem;
-    color: grey;
+    color: white;
     display: flex;
     align-items: flex-end;
     white-space: nowrap;
@@ -118,7 +116,7 @@ export default class Acknowledgements extends React.Component{
         var panel4 = ["The Eye","Product"];
         
         return(
-            <Wrapper>
+            <Wrapper id="Ackknowledgements">
                 <Title>Acknowledgements</Title>
                 <Desktop>
                     <PanelContainer>

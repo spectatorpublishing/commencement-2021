@@ -6,7 +6,7 @@ const BigPapa = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 35vw;
-    margin-left: 10rem;
+    margin-left: 2rem;
 `
 const Title = styled.div`
     text-transform: capitalize;
@@ -42,6 +42,13 @@ const Button = styled.a`
 const Desc = styled.div`
     font-size: 1.3em;
 `
+
+const Ad = styled.img`
+    width: 100%;
+    /* background-color: blue; */
+`;
+
+
 export default class Objects extends React.Component {
 	render() {
         const table = this.props.info.list;
@@ -58,7 +65,8 @@ export default class Objects extends React.Component {
                 <br/>
                 <Categories>{lists}</Categories>
                 <br/>
-                <Button href={this.props.info.printLink}><h3>SEE IT IN PRINT</h3></Button>
+                {/* <Button href={this.props.info.printLink}><h3>SEE IT IN PRINT</h3></Button> */}
+                <Ad src={this.props.info.ad}></Ad>
             </BigPapa>	
 		)
 	}

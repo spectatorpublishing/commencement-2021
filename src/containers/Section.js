@@ -13,7 +13,7 @@ const SectionWrapper = styled.div`
 const HeaderWrapper = styled.div`
     display: none;
     width: 70%;
-    @media only screen and (min-width: 992px){
+    @media only screen and (min-width: 992px) {
         display: inline-flex;
         position: sticky;
         align-self: flex-start;
@@ -29,7 +29,7 @@ const HeaderWrapper = styled.div`
 
 const Header = styled.div`
     max-width: 35vw;
-    margin-left: 10rem;
+    /* margin-left: 10rem; */
     &>h1 {
         margin-bottom: 1rem;
     }
@@ -44,7 +44,7 @@ const HeaderBlurb = styled.div`
 
 const HeaderWrapperMobile = styled.div`
     width: 100vw;
-    height; 8rem;
+    /* height: 8rem; */
     display: block;  
     margin: 2rem 0;
 `
@@ -78,11 +78,12 @@ const ArticlesWrapper = styled.div`
     width: 100vw;
     @media only screen and (min-width: 992px){
         display: inline-block;
-        width: 45vw;
-        background: ${props => props.theme.babyBlue};
+        width: 35vw;
+        padding: 4rem 0;
+        /* background: ${props => props.theme.babyBlue}; */
     }
     background: ${props => props.theme.cream};
-    padding: 4rem 0;
+    padding: 2rem 0;
 `
 
 export default class Section extends React.Component {
@@ -102,12 +103,12 @@ export default class Section extends React.Component {
             {title: this.props.name,
             titleDesc: this.props.blurb,
             list: list,
-            printLink: "http://www.google.com"
+            ad: this.props.ad
             }
         ]
         const TitleCards = info.map(info => <TitleCard info = {info}/>)
         return(
-                <SectionWrapper ref={this.props._ref}>
+                <SectionWrapper id={this.props.name} ref={this.props._ref}>
                     <HeaderWrapper>
                         {TitleCards}
                     </HeaderWrapper>
