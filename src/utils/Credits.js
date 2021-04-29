@@ -91,7 +91,7 @@ const Credits = {
             title: "Revenue Director"
         },
         {
-            name: "Villana Wang",
+            name: "Vilanna Wang",
             title: "Revenue Project Manager"
         },
     ],
