@@ -16,7 +16,7 @@ const Wrapper =styled.div`
 const Title =styled.div`
     text-transform: uppercase;
     font-size: 1.6em;
-    color: white;
+    color: #707070;
     font-weight:900;
     margin-bottom: 2rem;
     @media only screen and (min-width:1200px){
@@ -44,14 +44,14 @@ const PanelContainer =styled.div`
 
 const Section =styled.div`
     font-size: 1.13rem;
-    color: white;
+    color: #707070;
     text-transform:uppercase;
     margin-bottom:.5rem;
 `;
 
 const Name =styled.div`
     font-size: .9rem;
-    color: white;
+    color: black;
     font-weight: bold;
     font-style: italic;
     white-space: pre;
@@ -64,7 +64,7 @@ const Name =styled.div`
 
 const Position =styled.div`
     font-size: .8rem;
-    color: white;
+    color: black;
     display: flex;
     align-items: flex-end;
     white-space: nowrap;
@@ -181,7 +181,7 @@ export default class Acknowledgements extends React.Component{
         var panel4 = ["The Eye","Illustrations","Engagement"];
         
         return(
-            <Wrapper id="Ackknowledgements">
+            <Wrapper id="Acknowledgments">
                 <Title>Acknowledgments</Title>
                 <Desktop>
                     <PanelContainer>

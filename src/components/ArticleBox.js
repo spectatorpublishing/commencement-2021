@@ -44,7 +44,7 @@ const ArticleImage = styled.div`
     }
     & img {
         width: 250px;
-        height: 250px;
+        /* height: 250px; */
         overflow: hidden;
         /* border-radius: 50%; */
     }

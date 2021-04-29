@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Wrap = styled.div`
     background-color: #FCFBF7;
-    padding: 1rem 5rem;
+    padding: 1rem 2rem;
     margin: 0;
     color: #707070;
 
@@ -64,7 +64,7 @@ const Wrap = styled.div`
     }
 
     @media only screen and (max-width: 500px){
-        padding: 1rem 1rem;
+        padding: 1rem 2rem;
         
         .container {
             width: 100%;
@@ -93,7 +93,11 @@ const Title = styled.div`
 const AdsWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 2.5rem;
+    padding: 3rem 4rem;
+
+    @media only screen and (max-width: 500px){
+        padding: 3rem 1rem;
+    }
 `;
 
 export default class SeniorAds extends React.Component {

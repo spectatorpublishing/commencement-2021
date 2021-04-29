@@ -16,7 +16,8 @@ const sectionNames = [
   "News",
   "Sports",
   "A&E",
-  "Senior Ads"
+  "Senior Ads",
+  "Acknowledgments"
 ]
 
 class App extends React.PureComponent {

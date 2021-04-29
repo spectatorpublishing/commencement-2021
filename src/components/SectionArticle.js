@@ -21,6 +21,7 @@ const Image = styled.img`
 const Title = styled.div`
     font-weight: bold;
     font-size: 1.25rem;
+    color: #707070;
 
     :hover {
         /* text-decoration: underline; */
@@ -28,6 +29,8 @@ const Title = styled.div`
 `;
 
 const Author = styled.div`
+    color: #707070;
+    font-style: italic;
 `;
 
 export default class SectionArticle extends React.Component {

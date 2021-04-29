@@ -1,34 +1,40 @@
 const GlobalData = {
     "Senior Columns": [
         {
-            title: "Ya yeet 6",
-            link: "https://www.reddit.com",
-            author: "DJ Thonk",
-            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+            title: "Lessons From a Virtual Charli XCX Concert",
+            link: "https://www.columbiaspectator.com/the-eye/2021/04/29/lessons-from-a-virtual-charli-xcx-concert/",
+            author: "Eden Teferi",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/FCDA6CQQ6VAPVIU7GM7B5JAJ3Q.png"
         },
         {
-            title: "Ya yeet 7",
-            link: "https://www.reddit.com",
-            author: "DJ Thonk",
-            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+            title: "I Got a Dog (Among Other Things)",
+            link: "https://www.columbiaspectator.com/the-eye/2021/04/29/i-got-a-dog-among-other-things/",
+            author: "Candy Chan",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WUORGBBP3FEIVAS6Z44TE5RY7M.jpg"
         },
         {
-            title: "Ya yeet 8",
-            link: "https://www.reddit.com",
-            author: "DJ Thonk",
-            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+            title: "Catching the Columbia Blues",
+            link: "https://www.columbiaspectator.com/the-eye/2021/04/29/catching-the-columbia-blues/",
+            author: "Jazilah Salam",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MHAIMZ4QKNG4DIWXEKPG4R4YT4.jpg"
         },
         {
-            title: "Ya yeet 9",
-            link: "https://www.reddit.com",
-            author: "DJ Thonk",
-            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+            title: "SENIOR COLUMN: AJ McDougall Is Not A Senior",
+            link: "https://www.columbiaspectator.com/the-eye/2021/04/29/senior-column-aj-mcdougall-is-not-a-senior/",
+            author: "AJ McDougall",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/V5WDP5ZV7NCUJAFSJQ2YNHAN3Q.jpg"
         },
         {
-            title: "Ya yeet 10",
-            link: "https://www.reddit.com",
-            author: "DJ Thonk",
-            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+            title: "When there was Columbia blue",
+            link: "https://www.columbiaspectator.com/opinion/2021/04/13/when-there-was-columbia-blue/",
+            author: "Jacob Mazzarella",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/N2Y4KDILS5D2POYNYPHN4X6J34.jpg"
+        },
+        {
+            title: "If you’re reading this, it’s late",
+            link: "https://www.columbiaspectator.com/the-eye/2021/04/29/if-youre-reading-this-its-late/",
+            author: "Isabel Jauregui",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5AJHA7YTUNEJLOO4XNLCT7NPEE.jpg"
         }
     ],
     "News": [
@@ -39,16 +45,40 @@ const GlobalData = {
             img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NA5QZKGUSJFIFMDKR6QP2POAEQ.jpg"
         },
         {
-            title: "Ya yeet 12",
-            link: "https://www.reddit.com",
-            author: "DJ Thonk",
-            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+            title: "Virtual Commencement is made bittersweet with the pandemic coming under control",
+            link: "https://www.columbiaspectator.com/news/2021/04/29/virtual-commencement-is-made-bittersweet-with-the-pandemic-coming-under-control/",
+            author: "Talia Abrahamson",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/DVTQQRVHMVEGHCO7RWXPOYP2NM.jpg"
         },
         {
-            title: "Ya yeet 13",
-            link: "https://www.reddit.com",
-            author: "DJ Thonk",
-            img: "https://steamuserimages-a.akamaihd.net/ugc/887630550045153287/7DD753A52C8BB98273532E12463385BE36E85968/"
+            title: "Inaugural cohort of Displaced Student Scholars sees its first graduates this year",
+            link: "https://www.columbiaspectator.com/news/2021/04/29/inaugural-cohort-of-displaced-student-scholars-sees-its-first-graduates-this-year/",
+            author: "Ashley Yung",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/IMEFZJVYWFHD5PXCJLMNCNLKOA.jpg"
+        },
+        {
+            title: "Joon Baek, CC ’21, leaves a legacy of international student advocacy",
+            link: "https://www.columbiaspectator.com/news/2021/04/29/joon-baek-cc-21-leaves-a-legacy-of-international-student-advocacy/",
+            author: "Abby Melbourne",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZFJ7J6YEZRBVHFWN54T7FUJYDE.jpg"
+        },
+        {
+            title: "Senior thesis ‘A Protest, Ongoing’ explores a tradition of student activism",
+            link: "https://www.columbiaspectator.com/news/2021/04/29/senior-thesis-a-protest-ongoing-explores-a-tradition-of-student-activism/",
+            author: "Irie Sentner and Stella Pasgkas",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TOIQZUR2QFG6NM46OOLKMR5TSI.jpg"
+        },
+        {
+            title: "Anjali Verma, SEAS ’21, advocated for marginalized students in STEM and across the University",
+            link: "https://www.columbiaspectator.com/news/2021/04/29/anjali-verma-seas-21-advocated-for-marginalized-students-in-stem-and-across-the-university/",
+            author: "Ashley Yung",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/OEZ7DWX7SZF75IHX5QFPLYUA2A.jpg"
+        },
+        {
+            title: "Ceon White, GS ’21: ‘Just keep pushing on’",
+            link: "https://www.columbiaspectator.com/news/2021/04/28/ceon-white-gs-21-just-keep-pushing-on/",
+            author: "Maya Mitrasinovic",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/QLZI4VUGDVDCTKQQBHBRRU5LGU.jpg"
         },
     ],
     "Sports": [
@@ -70,6 +100,24 @@ const GlobalData = {
             author: "Robert Gao",
             img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L4M26QZYBBBRBKC5AE24EW2YEQ.jpg"
         },
+        {
+            title: "Josh Nicoloff leads Columbia baseball by example, even after losing junior and senior seasons",
+            link: "https://www.columbiaspectator.com/main/2021/04/29/how-baseball-improvised-to-stay-together-and-improve-throughout-the-pandemic/",
+            author: "Robert Gao",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L4M26QZYBBBRBKC5AE24EW2YEQ.jpg"
+        },
+        {
+            title: "How baseball improvised to stay together and improve throughout the pandemic",
+            link: "https://www.columbiaspectator.com/sports/2021/04/28/josh-nicoloff-leads-columbia-baseball-by-example-even-after-losing-junior-and-senior-seasons/",
+            author: "Miles Schachner and Rebecca Wachen",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/U2ICLIGXYZDVNDQOBJZBUJDZ3E.gif"
+        },
+        {
+            title: "Men’s basketball seniors reflect on overcoming adversity and the road ahead",
+            link: "https://www.columbiaspectator.com/main/2021/04/29/mens-basketball-seniors-reflect-on-overcoming-adversity-and-the-road-ahead/",
+            author: "Miles Schachner and Matthew Kim",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/LHKTYLAU5NDLVLTS5E6MWKAUZ4.jpg"
+        }
     ],
     "Arts and Entertainment": [
         {
