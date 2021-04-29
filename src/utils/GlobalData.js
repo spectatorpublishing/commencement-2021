@@ -25,7 +25,7 @@ const GlobalData = {
             img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MHAIMZ4QKNG4DIWXEKPG4R4YT4.jpg"
         },
         {
-            title: "SENIOR COLUMN: AJ McDougall Is Not A Senior",
+            title: "AJ McDougall Is Not A Senior",
             link: "https://www.columbiaspectator.com/the-eye/2021/04/29/senior-column-aj-mcdougall-is-not-a-senior/",
             author: "AJ McDougall",
             img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/V5WDP5ZV7NCUJAFSJQ2YNHAN3Q.jpg"
