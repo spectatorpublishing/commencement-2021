@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Wrap = styled.div`
     margin: 1rem;
+    width: 25rem;
 
     a:hover {
         text-decoration: none;
@@ -10,7 +11,7 @@ const Wrap = styled.div`
 `;
 
 const Image = styled.img`
-    width: 20rem;
+    width: 100%;
 
     :hover {
         filter: brightness(50%);
@@ -20,6 +21,10 @@ const Image = styled.img`
 const Title = styled.div`
     font-weight: bold;
     font-size: 1.25rem;
+
+    :hover {
+        /* text-decoration: underline; */
+    }
 `;
 
 const Author = styled.div`

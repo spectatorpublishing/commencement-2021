@@ -26,7 +26,7 @@ const Wrap = styled.div`
     opacity: 0;
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -50,7 +50,16 @@ const Wrap = styled.div`
     }
 
     .title {
+        font-size: 1.1rem;
         font-weight: bold;
+    }
+
+    .description {
+
+    }
+
+    .longDescription {
+        font-style: italic;
     }
 `;
 
@@ -80,6 +89,7 @@ export default class SeniorAds extends React.Component {
                                 <div class="text">
                                     <div class="title">{ad.title}</div>
                                     <div class="description">{ad.description}</div>
+                                    <div class="longDescription">{ad.longDescription}</div>
                                 </div>
                             </div>
                         </div>

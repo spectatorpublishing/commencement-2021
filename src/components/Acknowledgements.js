@@ -110,14 +110,14 @@ export default class Acknowledgements extends React.Component{
 
  
     render(){
-        var panel1 = ["Corporate Board", "News","Sports","Engagement"];
-        var panel2 = ["A&E","Revenue","Photo"];
-        var panel3 = ["Opinion","Copy","Design","Spectrum"];
+        var panel1 = ["Corporate Board", "News","Sports"];
+        var panel2 = ["A&E","Revenue","Photo","Engagement"];
+        var panel3 = ["Opinion","Copy","Design"];
         var panel4 = ["The Eye","Product"];
         
         return(
             <Wrapper id="Ackknowledgements">
-                <Title>Acknowledgements</Title>
+                <Title>Acknowldgements</Title>
                 <Desktop>
                     <PanelContainer>
                         <Panel>{panel1.map((element,i)=><Division key={i} section= {element}/>)}</Panel>
