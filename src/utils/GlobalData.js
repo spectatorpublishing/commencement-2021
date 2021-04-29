@@ -1,6 +1,12 @@
 const GlobalData = {
     "Senior Columns": [
         {
+            title: "If you’re reading this, it’s late",
+            link: "https://www.columbiaspectator.com/the-eye/2021/04/29/if-youre-reading-this-its-late/",
+            author: "Isabel Jauregui",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5AJHA7YTUNEJLOO4XNLCT7NPEE.jpg"
+        },
+        {
             title: "Lessons From a Virtual Charli XCX Concert",
             link: "https://www.columbiaspectator.com/the-eye/2021/04/29/lessons-from-a-virtual-charli-xcx-concert/",
             author: "Eden Teferi",
@@ -30,12 +36,6 @@ const GlobalData = {
             author: "Jacob Mazzarella",
             img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/N2Y4KDILS5D2POYNYPHN4X6J34.jpg"
         },
-        {
-            title: "If you’re reading this, it’s late",
-            link: "https://www.columbiaspectator.com/the-eye/2021/04/29/if-youre-reading-this-its-late/",
-            author: "Isabel Jauregui",
-            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5AJHA7YTUNEJLOO4XNLCT7NPEE.jpg"
-        }
     ],
     "News": [
         {
@@ -93,12 +93,6 @@ const GlobalData = {
             link: "https://www.columbiaspectator.com/sports/2021/04/28/his-footprint-is-all-over-the-program-how-josh-wainwright-broke-records-and-spearheaded-the-revitalization-of-columbia-football/",
             author: "Bernard Wang",
             img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JO2PEX7OCZGFZKSDTXKWAZLALA.jpg"
-        },
-        {
-            title: "Josh Nicoloff leads Columbia baseball by example, even after losing junior and senior seasons",
-            link: "https://www.columbiaspectator.com/sports/2021/04/28/josh-nicoloff-leads-columbia-baseball-by-example-even-after-losing-junior-and-senior-seasons/",
-            author: "Robert Gao",
-            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L4M26QZYBBBRBKC5AE24EW2YEQ.jpg"
         },
         {
             title: "Josh Nicoloff leads Columbia baseball by example, even after losing junior and senior seasons",
