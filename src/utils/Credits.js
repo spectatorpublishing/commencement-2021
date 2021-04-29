@@ -85,16 +85,8 @@ const Credits = {
             title: "Lead Story Editor"
         },
         {
-            name: "Candy Chan",
-            title: "Deputy Features Editor"
-        },
-        {
-            name: "Mary Marsh",
-            title: "Deputy Zone Editor"
-        },
-        {
-            name: "Sara Bell",
-            title: "Deputy Zone Editor"
+            name: "Teresa Lawlor",
+            title: "View From Here Editor"
         },
     ],
     "Copy": [
@@ -155,54 +147,16 @@ const Credits = {
             title: "Preslotter"
         },
     ],
-    "Product": [
+    "Product Design": [
         {
             name: "Cindy Espinosa",
             title: "Head of Product"
         },
+    ],
+    "Engineering": [
         {
-            name: "Cecilia Orduña",
-            title: "Lead Product Designer"
-        },
-        {
-            name: "Shannon Hui",
-            title: "Product Manager"
-        },
-        {
-            name: "Cindy Espinosa",
-            title: "Product Manager"
-        },
-        {
-            name: "Mirah Shi",
-            title: "Product Designer"
-        },
-        {
-            name: "Arsalaan Ansari",
+            name: "Erin McNulty",
             title: "Head of Engineering"
-        },
-        {
-            name: "Rounak Bera",
-            title: "Engineering Manager"
-        },
-        {
-            name: "William Chiu",
-            title: "Engineering Manager"
-        },
-        {
-            name: "Matthew Vanegas",
-            title: "Engineer"
-        },
-        {
-            name: "Caroline Hoang",
-            title: "Engineer"
-        },
-        {
-            name: "Chenoa Bunts-Anderson",
-            title: "Engineer"
-        },
-        {
-            name: "Chudi Obiofuma",
-            title: "Engineer"
         },
     ],
     "Opinion": [
@@ -211,14 +165,18 @@ const Credits = {
             title: "Editorial Page Editor"
         },
     ],
-    "Design": [
+    "Illustrations": [
         {
-            name: "Michelle Shin",
-            title: "Design Editor"
+            name: "Brenda Huang",
+            title: "Illustrations Editor"
         },
         {
-            name: "Xixi Wang",
-            title: "Staff Designer"
+            name: "Liza Evseeva",
+            title: "Deputy Illustrations Editor"
+        },
+        {
+            name: "Carlos Ochoa",
+            title: "Deputy Illustrations Editor"
         },
     ],
     "Sports": [
@@ -231,27 +189,27 @@ const Credits = {
             title: "Sports Editor"
         },
          {
+            name: "Matt Kim",
+            title: "Deputy Sports Editor"
+        },
+        {
             name: "Miles Schachner",
             title: "Deputy Sports Editor"
         },
-         {
-            name: "Matt Kim",
-            title: "Deputy Sports Editor"
+        {
+            name: "Robert Gao",
+            title: "Staff Writer"
         },
          {
             name: "Wick Hallos",
             title: "Staff Writer"
         },
-         {
-            name: "Bernard Wang",
-            title: "Staff Writer"
-        },
-         {
+        {
             name: "Rebecca Wachen",
             title: "Staff Writer"
         },
          {
-            name: "Robert Gao",
+            name: "Bernard Wang",
             title: "Staff Writer"
         },
     ],
@@ -265,30 +223,78 @@ const Credits = {
             title: "Deputy Photo Editor"
         },
         {
-            name: "Margaret Maguire",
-            title: "Deputy Photo Editor"
+            name: "Ryan Balderas",
+            title: "Staff Videographer"
         },
         {
-            name: "Aliya Schneider",
-            title: "Deputy Photo Editor"
+            name: "Samantha Camacho",
+            title: "Staff Photographer"
+        },
+        {
+            name: "Kathy Fang",
+            title: "Staff Photographer"
+        },
+        {
+            name: "Rommel Nunez",
+            title: "Staff Photographer"
+        },
+        {
+            name: "Joao Santos",
+            title: "Staff Photographer"
+        },
+        {
+            name: "Selina Yang",
+            title: "Staff Photographer"
         },
     ],
     "Engagement": [
         {
-            name: "Isabel Jauregui",
+            name: "Roxane Carre",
             title: "Engagement Director"
         },
         {
-            name: "Madison Harden",
-            title: "Senior Engagement Manager"
-        },
-        {
-            name: "Hailey Shi",
+            name: "Evan Kong",
             title: "Engagement Manager"
         },
         {
             name: "Jake Fisher",
             title: "Engagement Manager"
+        },
+        {
+            name: "Mars Hu",
+            title: "Engagement Analyst"
+        },
+        {
+            name: "Kailin Huang",
+            title: "Engagement Analyst"
+        },
+         {
+            name: "Ravneek Kaur",
+            title: "Engagement Analyst"
+        },
+        {
+            name: "Jeannette Kim",
+            title: "Engagement Analyst"
+        },
+         {
+            name: "Hannah Lederman",
+            title: "Engagement Analyst"
+        },
+        {
+            name: "Kamryn Sonson",
+            title: "Engagement Analyst"
+        },
+         {
+            name: "Shane Spring",
+            title: "Engagement Analyst"
+        },
+        {
+            name: "Samantha Turk",
+            title: "Engagement Analyst"
+        },
+        {
+            name: "Edgardo Zelaya",
+            title: "Engagement Analyst"
         },
     ]
 }
