@@ -65,7 +65,7 @@ const GlobalData = {
         {
             title: "Senior thesis ‘A Protest, Ongoing’ explores a tradition of student activism",
             link: "https://www.columbiaspectator.com/news/2021/04/29/senior-thesis-a-protest-ongoing-explores-a-tradition-of-student-activism/",
-            author: "Irie Sentner and Stella Pasgkas",
+            author: "Irie Sentner and Stella Pagkas",
             img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TOIQZUR2QFG6NM46OOLKMR5TSI.jpg"
         },
         {
