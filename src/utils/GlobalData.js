@@ -161,6 +161,12 @@ const GlobalData = {
             link: "https://www.columbiaspectator.com/arts-and-entertainment/2021/04/27/soorim-lee-cc-21-on-her-joyous-journey-through-the-columbia-film-world/",
             author: "Bella Druckman",
             img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NWPECMVCQRDC7DYNYW3T5DYO3E.jpg"
+        },
+        {
+            title: "Seniors reflect on their time as part of Columbia’s dance community",
+            link: "https://www.columbiaspectator.com/arts-and-entertainment/2021/04/28/seniors-reflect-on-their-time-as-part-of-columbias-dance-community/",
+            author: "Liz Radway and Emma Danon",
+            img: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6UKPRDAIDVCFLDNJVDBLMKTGGI.JPG"
         }
     ]
 }

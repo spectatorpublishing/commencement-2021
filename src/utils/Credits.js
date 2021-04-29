@@ -84,6 +84,10 @@ const Credits = {
             name: "Liz Radway",
             title: "Staff Writer"
         },
+        {
+            name: "Clare Donaldson",
+            title: "Staff Writer"
+        }
     ],
     "Revenue": [
         {
