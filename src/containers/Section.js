@@ -12,7 +12,7 @@ const SectionWrapper = styled.div`
 
 const HeaderWrapper = styled.div`
     display: none;
-    width: 70%;
+    width: 80%;
     @media only screen and (min-width: 992px) {
         display: inline-flex;
         position: sticky;

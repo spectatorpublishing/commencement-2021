@@ -53,20 +53,36 @@ const Credits = {
             title: "A&E Editor"
         },
         {
-            name: "Gia Kim",
+            name: "Olivia Doyle",
             title: "Deputy A&E Editor"
         },
         {
-            name: "Isabela Espadas Barros Leal",
+            name: "Bella Druckman",
             title: "Deputy A&E Editor"
         },
         {
-            name: "Fonda Shen",
+            name: "Katie Levine",
             title: "Deputy A&E Editor"
         },
         {
-            name: "Samuel Jones",
-            title: "Deputy A&E Editor"
+            name: "Esterah Brown",
+            title: "Staff Writer"
+        },
+        {
+            name: "Sophie Craig",
+            title: "Staff Writer"
+        },
+         {
+            name: "Emma Danon",
+            title: "Staff Writer"
+        },
+        {
+            name: "Irene Madrigal",
+            title: "Staff Writer"
+        },
+         {
+            name: "Liz Radway",
+            title: "Staff Writer"
         },
     ],
     "Revenue": [

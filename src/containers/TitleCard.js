@@ -5,7 +5,7 @@ import List from './List.js';
 const BigPapa = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 35vw;
+    max-width: 40vw;
     margin-left: 2rem;
 `
 const Title = styled.div`

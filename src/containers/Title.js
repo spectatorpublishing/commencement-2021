@@ -54,7 +54,11 @@ const SectionContainer=styled.div`
     width: 30%;
 
     @media only screen and (max-width: 500px){
-        display: none;
+        position: absolute;
+        height: 30rem;
+        width: 100%;
+        top: 30%;
+        left: 0;
     }
 `;
 

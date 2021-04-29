@@ -79,6 +79,20 @@ const SectionContainer =styled.div`
     margin-bottom: 1em;
 `;
 
+const DevWrap = styled.div`
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:90%;
+    padding-left: 2rem;
+`;
+
+const Dev = styled.div`
+    display:flex;
+    flex-direction:row;
+    min-width: 10rem;
+`;
 
 
 class Division extends React.Component{
@@ -105,13 +119,64 @@ class Division extends React.Component{
     }
 }
 
+const dev_creds = [
+    {
+        name: "Kevin Li",
+        title: "Former Head of Product"
+    },
+    {
+        name: "Cecilia Orduña",
+        title: "Designer"
+    },
+    {
+        name: "Shannon Hui",
+        title: "Designer"
+    },
+    {
+        name: "Cindy Espinosa",
+        title: "Designer"
+    },
+    {
+        name: "Mirah Shi",
+        title: "Designer"
+    },
+    {
+        name: "Arsalaan Ansari",
+        title: "Former Head of Engineering"
+    },
+    {
+        name: "Rounak Bera",
+        title: "Developer"
+    },
+    {
+        name: "William Chiu",
+        title: "Former Head of Product"
+    },
+    {
+        name: "Matthew Vanegas",
+        title: "Developer"
+    },
+    {
+        name: "Caroline Hoang",
+        title: "Developer"
+    },
+    {
+        name: "Chenoa Bunts-Anderson",
+        title: "Developer"
+    },
+    {
+        name: "Chudi Obiofuma",
+        title: "Developer"
+    },
+];
+
 
 export default class Acknowledgements extends React.Component{
 
  
     render(){
-        var panel1 = ["Corporate Board", "News","Sports"];
-        var panel2 = ["Engineering","Product Design", "A&E","Photo"];
+        var panel1 = ["Corporate Board", "News","A&E"];
+        var panel2 = ["Engineering","Product Design","Sports","Photo"];
         var panel3 = ["Opinion","Copy","Revenue",];
         var panel4 = ["The Eye","Illustrations","Engagement"];
         
@@ -131,6 +196,42 @@ export default class Acknowledgements extends React.Component{
                         <Panel>{panel1.concat(panel2).concat(panel3).concat(panel4).map((element,x)=><Division section= {element}/>)}</Panel>
                     </PanelContainer>
                 </MobileAndTablet>
+                <Title>Design and Development</Title>
+                <DevWrap>
+                    <div>
+                    {
+                        dev_creds.slice(0, 4).map(cred => {
+                            return (
+                                <Dev>
+                                    <Name>{cred.name}</Name> <Position>{cred.title}</Position>
+                                </Dev>
+                            )}
+                        )
+                    }
+                    </div>
+                    <div>
+                    {
+                        dev_creds.slice(4, 8).map(cred => {
+                            return (
+                                <Dev>
+                                    <Name>{cred.name}</Name> <Position>{cred.title}</Position>
+                                </Dev>
+                            )}
+                        )
+                    }
+                    </div>
+                    <div>
+                    {
+                        dev_creds.slice(8, 12).map(cred => {
+                            return (
+                                <Dev>
+                                    <Name>{cred.name}</Name> <Position>{cred.title}</Position>
+                                </Dev>
+                            )}
+                        )
+                    }
+                    </div>
+                </DevWrap>
             </Wrapper>
         )
     }

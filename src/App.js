@@ -9,6 +9,7 @@ import Section from './containers/Section'
 import Acknowledgements from './components/Acknowledgements'
 import Articles from './containers/Articles'
 import SeniorAds from './containers/SeniorAds';
+import AdRow from './components/AdRow';
 
 const sectionNames = [
   "Senior Columns",
@@ -35,7 +36,7 @@ class App extends React.PureComponent {
       "Senior Columns": {
         description: "Members of Spectator’s graduating class reflect on what they’ve learned and how they’ve grown from their time at the organization.",
         ref: this.seniorColRef,
-        ad: "https://commencement2021.s3.amazonaws.com/cs-dept-ad.png"
+        ad: "https://commencement2021.s3.amazonaws.com/TelAviv_ad.png"
       }
     };
   }
@@ -105,6 +106,7 @@ class App extends React.PureComponent {
             />
             ))
           }
+          <AdRow />
           <Articles 
             sections={[
               {

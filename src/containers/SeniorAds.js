@@ -3,19 +3,20 @@ import styled from 'styled-components';
 
 const Wrap = styled.div`
     background-color: #FCFBF7;
-    padding: 1rem 2rem;
+    padding: 1rem 5rem;
     margin: 0;
     color: #707070;
 
     .container {
     position: relative;
-    width: 33%;
+    width: 50%;
     }
 
     .image {
     opacity: 1;
     display: block;
     width: 100%;
+    /* height: 20rem; */
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
@@ -60,6 +61,26 @@ const Wrap = styled.div`
 
     .longDescription {
         font-style: italic;
+    }
+
+    @media only screen and (max-width: 500px){
+        padding: 1rem 1rem;
+        
+        .container {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 0.85rem;
+        }
+
+        .description {
+            font-size: 0.75rem;
+        }
+
+        .longDescription {
+            font-size: 0.75rem;
+        }
     }
 `;
 
